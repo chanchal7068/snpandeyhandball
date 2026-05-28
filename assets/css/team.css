@@ -213,6 +213,36 @@
     gap: var(--spacing-3);
 }
 
+/* Social button for use on LIGHT/WHITE card backgrounds (profile cards, officer cards, board members) */
+.profile-social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--color-light-bg);
+    border: 1.5px solid var(--color-light-gray);
+    font-size: 0.95rem;
+    color: var(--color-primary);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+}
+
+.profile-social-btn:hover {
+    transform: translateY(-3px) scale(1.1);
+    background-color: var(--color-primary-dark);
+    border-color: var(--color-primary-dark);
+    color: var(--color-white);
+    box-shadow: var(--shadow-md);
+}
+
+.profile-social-btn.fb:hover  { background-color: #1877F2; border-color: #1877F2; }
+.profile-social-btn.ig:hover  { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); border-color: #dc2743; }
+.profile-social-btn.yt:hover  { background-color: #FF0000; border-color: #FF0000; }
+
 .social-btn {
     display: inline-flex;
     align-items: center;
@@ -562,12 +592,23 @@
 .vol-icon {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-3);
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-4);
     transition: transform var(--transition-normal);
 }
 
+.vol-icon i {
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
 .volunteer-card:hover .vol-icon {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.1);
 }
 
 .volunteer-card h3 {

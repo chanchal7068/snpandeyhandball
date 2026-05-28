@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Premium Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Theme Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -25,6 +28,12 @@
     <div class="top-bar">
         <div class="top-bar-container">
             <div class="top-bar-info">
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                    </svg>
+                    Reg No.: 202400996036397
+                </span>
                 <span>
                     <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
                         <path
@@ -42,8 +51,12 @@
             </div>
 
             <div class="top-bar-actions">
-                <span style="font-family: var(--font-secondary); opacity: 0.85; margin-right: 10px;">Reg No.:
-                    202400996036397</span>
+                <div class="top-bar-socials">
+                    <a href="#" class="top-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="top-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="top-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                    <a href="#" class="top-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
                 <div class="lang-selector">
                     <button id="lang-switch-btn" class="lang-btn">
                         <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
@@ -70,10 +83,10 @@
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
                         style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
-                    <div class="brand-text">
+                    <!-- <div class="brand-text">
                         <span class="brand-name">SNP <span>Handball</span></span>
                         <span class="brand-tagline">Sports Trust & NGO</span>
-                    </div>
+                    </div> -->
                 </a>
             </div>
 
@@ -153,7 +166,7 @@
                 <div class="purposes-grid">
                     <!-- Court construction -->
                     <div class="purpose-card">
-                        <span class="purp-icon">🏟️</span>
+                        <span class="purp-icon"><i class="fas fa-running"></i></span>
                         <h3>Handball Court Build</h3>
                         <p>Funds standard clay court installations inside government village schools. Provides kids with
                             clean, standard-dimension courts.</p>
@@ -161,7 +174,7 @@
 
                     <!-- Athlete adoption -->
                     <div class="purpose-card">
-                        <span class="purp-icon">🏋️</span>
+                        <span class="purp-icon"><i class="fas fa-dumbbell"></i></span>
                         <h3>Adopt an Athlete</h3>
                         <p>Sponsors a child's academy coaching fee, complete monthly physical training, daily
                             high-protein diets, and protective sportswear.</p>
@@ -169,7 +182,7 @@
 
                     <!-- Library setups -->
                     <div class="purpose-card">
-                        <span class="purp-icon">📚</span>
+                        <span class="purp-icon"><i class="fas fa-book-open"></i></span>
                         <h3>Sports & Study Library</h3>
                         <p>Finances textbooks, silent desks, and free book packages inside rural primary centers to
                             ensure trainees maintain positive school grades.</p>
@@ -177,7 +190,7 @@
 
                     <!-- Girls sports kit -->
                     <div class="purpose-card">
-                        <span class="purp-icon">👕</span>
+                        <span class="purp-icon"><i class="fas fa-tshirt"></i></span>
                         <h3>Girls Sports Kits</h3>
                         <p>Provides girls-only training clinics with sanitary hygiene packs, jerseys, court shoes, and
                             protective knee supports.</p>
@@ -216,7 +229,7 @@
                             <div class="qr-info">
                                 <span class="upi-id-label">Official UPI ID:</span>
                                 <span class="upi-id-val">pay@snpandeytrust</span>
-                                <span class="secure-badge">🔒 Bank-Verified UPI Merchants</span>
+                                <span class="secure-badge"><i class="fa-solid fa-lock" style="font-size:0.75rem;"></i> Bank-Verified UPI Merchants</span>
                             </div>
                         </div>
                     </div>
@@ -346,7 +359,9 @@
                 <div class="tax-grid">
                     <!-- Exemption card -->
                     <div class="tax-card">
-                        <div class="tax-icon-wrapper">🛡️</div>
+                        <div class="tax-icon-wrapper">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
                         <h3>Section 80G Benefits</h3>
                         <p>Donations made to S.N. Pandey Khel Sansthan Trust qualify for 50% tax deductions under
                             Section 80G of the Income Tax Act, 1961.</p>
@@ -354,7 +369,9 @@
 
                     <!-- CSR-1 card -->
                     <div class="tax-card">
-                        <div class="tax-icon-wrapper">📜</div>
+                        <div class="tax-icon-wrapper">
+                            <i class="fa-solid fa-file-contract"></i>
+                        </div>
                         <h3>CSR-1 Registered</h3>
                         <p>We are a fully registered MCA compliant NGO under registration number CSR0001234, eligible to
                             accept corporate funding.</p>
@@ -362,7 +379,9 @@
 
                     <!-- Auditing card -->
                     <div class="tax-card">
-                        <div class="tax-icon-wrapper">📊</div>
+                        <div class="tax-icon-wrapper">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
                         <h3>Transparent Audit</h3>
                         <p>Audited spreadsheets, annual compliance sheets, and income-expense statements are maintained
                             openly by MRS & Co. Auditors.</p>
@@ -437,7 +456,7 @@
                 <div class="logo-container">
                     <a href="index.html">
                         <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                            style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                            style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
                         <div class="brand-text">
                             <span class="brand-name">SNP <span>Handball</span></span>
                             <span class="brand-tagline">Sports Trust & NGO</span>
@@ -452,7 +471,7 @@
             </div>
 
             <!-- Quick Links -->
-            <div class="footer-col col-links">
+            <div class="footer-col col-links" style="margin-top: 25px;">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -463,7 +482,7 @@
             </div>
 
             <!-- Programs -->
-            <div class="footer-col col-programs">
+            <div class="footer-col col-programs" style="margin-top: 25px;">
                 <h4>Our Programs</h4>
                 <ul>
                     <li><a href="academy.html">Handball Academy</a></li>
@@ -473,7 +492,7 @@
             </div>
 
             <!-- Contact, Social & Registration details -->
-            <div class="footer-col col-contact-reg">
+            <div class="footer-col col-contact-reg" style="margin-top: 25px;">
                 <h4>Contact & Registration</h4>
                 <p class="footer-address">
                     C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi
@@ -489,10 +508,10 @@
                 </div>
                 <!-- Social Icons inside Footer -->
                 <div class="footer-social-links">
-                    <a href="#" class="footer-social-btn" aria-label="Facebook">📘</a>
-                    <a href="#" class="footer-social-btn" aria-label="Instagram">📸</a>
-                    <a href="#" class="footer-social-btn" aria-label="Twitter">🐦</a>
-                    <a href="#" class="footer-social-btn" aria-label="YouTube">📺</a>
+                    <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                    <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>

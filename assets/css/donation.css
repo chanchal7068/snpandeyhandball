@@ -503,14 +503,28 @@
 }
 
 .tax-icon-wrapper {
-    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    color: var(--color-white);
+    font-size: 1rem;
     margin-bottom: var(--spacing-4);
-    display: inline-block;
-    transition: transform var(--transition-normal);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    box-shadow: var(--shadow-md);
+}
+
+.tax-icon-wrapper i {
+    font-size: 1.9rem;
+    line-height: 1;
 }
 
 .tax-card:hover .tax-icon-wrapper {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.1);
+    box-shadow: var(--shadow-gold);
 }
 
 .tax-card h3 {

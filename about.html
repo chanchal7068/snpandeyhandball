@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Premium Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Theme Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -29,6 +32,12 @@
             <div class="top-bar-info">
                 <span>
                     <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                    </svg>
+                    Reg No.: 202400996036397
+                </span>
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
                         <path
                             d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                     </svg>
@@ -44,8 +53,12 @@
             </div>
 
             <div class="top-bar-actions">
-                <span style="font-family: var(--font-secondary); opacity: 0.85; margin-right: 10px;">Reg No.:
-                    202400996036397</span>
+                <div class="top-bar-socials">
+                    <a href="#" class="top-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="top-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="top-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                    <a href="#" class="top-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
                 <div class="lang-selector">
                     <button id="lang-switch-btn" class="lang-btn">
                         <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
@@ -73,10 +86,10 @@
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
                         style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
-                    <div class="brand-text">
+                    <!-- <div class="brand-text">
                         <span class="brand-name">SNP <span>Handball</span></span>
                         <span class="brand-tagline">Sports Trust & NGO</span>
-                    </div>
+                    </div> -->
                 </a>
             </div>
 
@@ -185,7 +198,7 @@
                 <div class="vision-grid-desktop">
                     <!-- Vision Card -->
                     <div class="vision-card">
-                        <div class="card-icon">👁️</div>
+                        <div class="card-icon"><i class="fa-solid fa-eye" style="color: var(--color-accent-orange);"></i></div>
                         <h3>Our Vision</h3>
                         <p>
                             To build national and global handball champions while cultivating highly responsible,
@@ -197,7 +210,7 @@
 
                     <!-- Mission Card -->
                     <div class="vision-card mission">
-                        <div class="card-icon">🚀</div>
+                        <div class="card-icon"><i class="fa-solid fa-rocket" style="color: var(--color-accent-orange);"></i></div>
                         <h3>Our Mission</h3>
                         <p>
                             To construct world-class grassroots academies, run systematic sports and education programs,
@@ -283,19 +296,19 @@
                 </div>
                 <div class="values-grid">
                     <div class="value-card">
-                        <div style="font-size: 2rem;">🤝</div>
+                        <div style="font-size: 2rem; margin-bottom: 10px;"><i class="fa-solid fa-handshake" style="color: var(--color-accent-orange);"></i></div>
                         <h4>Integrity & Transparency</h4>
                         <p>Maintaining absolute honesty and accountability in all trust activities, sports selections,
                             and financial allocations.</p>
                     </div>
                     <div class="value-card">
-                        <div style="font-size: 2rem;">🏆</div>
+                        <div style="font-size: 2rem; margin-bottom: 10px;"><i class="fa-solid fa-trophy" style="color: var(--color-orange-gold);"></i></div>
                         <h4>Sportsmanship & Grit</h4>
                         <p>Fostering discipline, dedication, high-level sports ethics, and the resilience to face
                             athletic and life challenges.</p>
                     </div>
                     <div class="value-card">
-                        <div style="font-size: 2rem;">❤️</div>
+                        <div style="font-size: 2rem; margin-bottom: 10px;"><i class="fa-solid fa-heart" style="color: var(--color-danger);"></i></div>
                         <h4>Inclusive Community Focus</h4>
                         <p>Ensuring that gender, economic background, or geography never acts as a barrier to athletic
                             training and education.</p>
@@ -453,7 +466,7 @@
             <div class="logo-container">
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                        style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                        style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
                     <div class="brand-text">
                         <span class="brand-name">SNP <span>Handball</span></span>
                         <span class="brand-tagline">Sports Trust & NGO</span>
@@ -468,7 +481,7 @@
         </div>
 
         <!-- Quick Links -->
-        <div class="footer-col col-links">
+        <div class="footer-col col-links" style="margin-top: 25px;">
             <h4>Quick Links</h4>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -479,7 +492,7 @@
         </div>
 
         <!-- Programs -->
-        <div class="footer-col col-programs">
+        <div class="footer-col col-programs" style="margin-top: 25px;">
             <h4>Our Programs</h4>
             <ul>
                 <li><a href="academy.html">Handball Academy</a></li>
@@ -489,7 +502,7 @@
         </div>
 
         <!-- Contact, Social & Registration details -->
-        <div class="footer-col col-contact-reg">
+        <div class="footer-col col-contact-reg" style="margin-top: 25px;">
             <h4>Contact & Registration</h4>
             <p class="footer-address">
                 C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi
@@ -505,10 +518,10 @@
             </div>
             <!-- Social Icons inside Footer -->
             <div class="footer-social-links">
-                <a href="#" class="footer-social-btn" aria-label="Facebook">📘</a>
-                <a href="#" class="footer-social-btn" aria-label="Instagram">📸</a>
-                <a href="#" class="footer-social-btn" aria-label="Twitter">🐦</a>
-                <a href="#" class="footer-social-btn" aria-label="YouTube">📺</a>
+                <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <!-- <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </div>

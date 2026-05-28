@@ -256,14 +256,27 @@
 }
 
 .opp-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: var(--spacing-3);
-    display: inline-block;
-    transition: transform var(--transition-normal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-4);
+    background-color: var(--color-light-bg);
+    transition: transform var(--transition-normal), background-color var(--transition-normal);
+}
+
+.opp-icon i {
+    font-size: 1.7rem;
+    line-height: 1;
 }
 
 .opportunity-card:hover .opp-icon {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.1);
+    background-color: rgba(245, 158, 11, 0.08);
 }
 
 .opportunity-card h3 {
@@ -550,14 +563,26 @@
 }
 
 .project-item-card .icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: var(--spacing-3);
-    display: inline-block;
-    transition: transform var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--color-light-bg);
+    transition: transform var(--transition-normal), background-color var(--transition-normal);
+}
+
+.project-item-card .icon i {
+    font-size: 1.7rem;
+    line-height: 1;
 }
 
 .project-item-card:hover .icon {
-    transform: scale(1.15) rotate(5deg);
+    transform: scale(1.1);
+    background-color: rgba(245, 158, 11, 0.08);
 }
 
 .project-item-card h3 {

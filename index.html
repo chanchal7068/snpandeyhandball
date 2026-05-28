@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Premium Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Theme Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -23,6 +26,12 @@
     <div class="top-bar">
         <div class="top-bar-container">
             <div class="top-bar-info">
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
+                    </svg>
+                    Reg No.: 202400996036397
+                </span>
                 <span>
                     <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
                         <path
@@ -40,6 +49,12 @@
             </div>
 
             <div class="top-bar-actions">
+                <div class="top-bar-socials">
+                    <a href="#" class="top-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="top-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="top-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                    <a href="#" class="top-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
                 <!-- Multi-Language Support Dropdown -->
                 <div class="lang-selector">
                     <button id="lang-switch-btn" class="lang-btn">
@@ -66,11 +81,11 @@
             <div class="logo-container">
                 <a href="index.html">
                     <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                        style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
-                    <div class="brand-text">
+                        style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                    <!-- <div class="brand-text">
                         <span class="brand-name">S.N.Pandey <span>Handball</span></span>
                         <span class="brand-tagline">Sports Trust & NGO</span>
-                    </div>
+                    </div> -->
                 </a>
             </div>
 
@@ -160,16 +175,16 @@
                 <!-- CTA Buttons -->
                 <div class="hero-cta-group">
                     <a href="donation.html" class="hero-cta-btn btn-donate-now">
-                        <span class="btn-icon">❤️</span> Donate Now
+                        <span class="btn-icon"><i class="fas fa-heart"></i></span> Donate Now
                     </a>
                     <a href="academy.html" class="hero-cta-btn btn-join-program">
-                        <span class="btn-icon">🏆</span> Join Program
+                        <span class="btn-icon"><i class="fas fa-trophy"></i></span> Join Program
                     </a>
                     <a href="contact.html?type=volunteer" class="hero-cta-btn btn-become-volunteer">
-                        <span class="btn-icon">🤝</span> Become Volunteer
+                        <span class="btn-icon"><i class="fas fa-handshake"></i></span> Become Volunteer
                     </a>
                     <a href="contact.html" class="hero-cta-btn btn-contact-us">
-                        <span class="btn-icon">📞</span> Contact Us
+                        <span class="btn-icon"><i class="fas fa-phone-alt"></i></span> Contact Us
                     </a>
                 </div>
             </div>
@@ -206,7 +221,7 @@
                     <div class="intro-features">
                         <!-- Vision Card -->
                         <div class="intro-feat-card">
-                            <div class="feat-icon">👁️</div>
+                            <div class="feat-icon"><i class="fa-solid fa-eye" style="color: var(--color-accent-orange);"></i></div>
                             <div class="feat-content">
                                 <h3>Our Vision</h3>
                                 <p>To cultivate global handball champions and outstanding community leaders who drive
@@ -215,7 +230,7 @@
                         </div>
                         <!-- Mission Card -->
                         <div class="intro-feat-card">
-                            <div class="feat-icon">🚀</div>
+                            <div class="feat-icon"><i class="fa-solid fa-rocket" style="color: var(--color-accent-orange);"></i></div>
                             <div class="feat-content">
                                 <h3>Our Mission</h3>
                                 <p>To build elite training academies, implement CSR community support projects, and
@@ -224,7 +239,7 @@
                         </div>
                         <!-- Social Impact Card -->
                         <div class="intro-feat-card">
-                            <div class="feat-icon">❤️</div>
+                            <div class="feat-icon"><i class="fa-solid fa-heart" style="color: var(--color-danger);"></i></div>
                             <div class="feat-content">
                                 <h3>Social Impact</h3>
                                 <p>Fostering discipline, modern physical health, high academic standards, and national
@@ -270,56 +285,56 @@
                 <div class="initiatives-grid">
                     <!-- 1. Sports Development -->
                     <div class="initiative-card">
-                        <div class="init-icon">🏆</div>
+                        <div class="init-icon"><i class="fa-solid fa-trophy" style="color: var(--color-orange-gold);"></i></div>
                         <h3>Sports Development</h3>
                         <p>Providing professional Olympic coaching pathways, athletic kits, and modern sports facilities
                             at the grassroots level.</p>
                     </div>
                     <!-- 2. Handball Academy -->
                     <div class="initiative-card">
-                        <div class="init-icon">🤾</div>
+                        <div class="init-icon"><i class="fa-solid fa-running" style="color: var(--color-accent-orange);"></i></div>
                         <h3>Handball Academy</h3>
                         <p>Our flagship handball academy identifying elite young athletes and grooming them under
                             Olympic standards.</p>
                     </div>
                     <!-- 3. Rural Education -->
                     <div class="initiative-card">
-                        <div class="init-icon">📚</div>
+                        <div class="init-icon"><i class="fa-solid fa-book-open" style="color: var(--color-primary-accent);"></i></div>
                         <h3>Rural Education</h3>
                         <p>Bridging academic gaps by supporting primary schools, supplying books, and organizing tuition
                             setups.</p>
                     </div>
                     <!-- 4. Women Empowerment -->
                     <div class="initiative-card">
-                        <div class="init-icon">👩</div>
+                        <div class="init-icon"><i class="fa-solid fa-person-dress" style="color: #EC4899;"></i></div>
                         <h3>Women Empowerment</h3>
                         <p>Creating specialized sports clinics and leadership programs for girls to foster confidence
                             and independence.</p>
                     </div>
                     <!-- 5. Health Awareness -->
                     <div class="initiative-card">
-                        <div class="init-icon">🍎</div>
+                        <div class="init-icon"><i class="fa-solid fa-heart-pulse" style="color: var(--color-danger);"></i></div>
                         <h3>Health Awareness</h3>
                         <p>Organizing local health camps, medical screenings, and distribution of sanitary supplies and
                             nutrition guides.</p>
                     </div>
                     <!-- 6. Youth Skill Programs -->
                     <div class="initiative-card">
-                        <div class="init-icon">🛠️</div>
+                        <div class="init-icon"><i class="fa-solid fa-screwdriver-wrench" style="color: var(--color-primary-accent);"></i></div>
                         <h3>Youth Skill Programs</h3>
                         <p>Providing vocational training, digital literacy, and professional coaching certifications to
                             secure livelihoods.</p>
                     </div>
                     <!-- 7. Environmental Campaigns -->
                     <div class="initiative-card">
-                        <div class="init-icon">🌱</div>
+                        <div class="init-icon"><i class="fa-solid fa-seedling" style="color: var(--color-success);"></i></div>
                         <h3>Environmental Campaigns</h3>
                         <p>Hosting mass tree plantation drives, plastic-free sports matches, and community cleanliness
                             campaigns.</p>
                     </div>
                     <!-- 8. Scholarship Programs -->
                     <div class="initiative-card">
-                        <div class="init-icon">🎓</div>
+                        <div class="init-icon"><i class="fa-solid fa-graduation-cap" style="color: var(--color-accent-gold);"></i></div>
                         <h3>Scholarship Programs</h3>
                         <p>Sponsoring talented student athletes with academic fee waivers and complete high-performance
                             training kits.</p>
@@ -456,28 +471,28 @@
                 </div>
                 <div class="achieve-grid">
                     <div class="achieve-item">
-                        <div class="achieve-num">🎖️</div>
+                        <div class="achieve-num"><i class="fa-solid fa-medal" style="color: var(--color-orange-gold);"></i></div>
                         <h3>Verified Certificates</h3>
                         <p>Fully compliant with registered sports NGO frameworks and audited government regulations.</p>
                     </div>
                     <div class="achieve-item">
-                        <div class="achieve-num">🏆</div>
+                        <div class="achieve-num"><i class="fa-solid fa-trophy" style="color: var(--color-accent-gold);"></i></div>
                         <h3>Prestigious Awards</h3>
                         <p>Recipient of district and state athletic development honors for rural talent integration.</p>
                     </div>
                     <div class="achieve-item">
-                        <div class="achieve-num">📰</div>
+                        <div class="achieve-num"><i class="fa-solid fa-newspaper" style="color: var(--color-primary-accent);"></i></div>
                         <h3>Media Coverage</h3>
                         <p>Gaining wide acclaim in state publications for handball matches and community services.</p>
                     </div>
                     <div class="achieve-item">
-                        <div class="achieve-num">🏛️</div>
+                        <div class="achieve-num"><i class="fa-solid fa-building-columns" style="color: var(--color-primary);"></i></div>
                         <h3>Government Recognition</h3>
                         <p>Partnering with government schools and local bodies under grassroot empowerment directives.
                         </p>
                     </div>
                     <div class="achieve-item">
-                        <div class="achieve-num">⚽</div>
+                        <div class="achieve-num"><i class="fa-solid fa-futbol" style="color: var(--color-text-dark);"></i></div>
                         <h3>Federation Affiliations</h3>
                         <p>Sustained partnerships with regional sports federations ensuring proper league avenues.</p>
                     </div>
@@ -625,19 +640,19 @@
                 </div>
                 <div class="partners-marquee-container">
                     <div class="partners-marquee">
-                        <div class="partner-logo"><span>🏆 Sports Federation</span></div>
-                        <div class="partner-logo"><span>🏢 Varanasi CSR Club</span></div>
-                        <div class="partner-logo"><span>🏫 Shiv Nagar High</span></div>
-                        <div class="partner-logo"><span>🤝 Indian NGO Alliance</span></div>
-                        <div class="partner-logo"><span>⚡ Apex Power Corp</span></div>
-                        <div class="partner-logo"><span>🏅 UP Handball Union</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-trophy" style="color: var(--color-orange-gold); margin-right: 8px;"></i>Sports Federation</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-building" style="color: var(--color-primary-accent); margin-right: 8px;"></i>Varanasi CSR Club</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-school" style="color: var(--color-primary); margin-right: 8px;"></i>Shiv Nagar High</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-handshake" style="color: var(--color-accent-orange); margin-right: 8px;"></i>Indian NGO Alliance</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-bolt" style="color: var(--color-orange-gold); margin-right: 8px;"></i>Apex Power Corp</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-award" style="color: var(--color-accent-gold); margin-right: 8px;"></i>UP Handball Union</span></div>
                         <!-- Duplicated for seamless loop -->
-                        <div class="partner-logo"><span>🏆 Sports Federation</span></div>
-                        <div class="partner-logo"><span>🏢 Varanasi CSR Club</span></div>
-                        <div class="partner-logo"><span>🏫 Shiv Nagar High</span></div>
-                        <div class="partner-logo"><span>🤝 Indian NGO Alliance</span></div>
-                        <div class="partner-logo"><span>⚡ Apex Power Corp</span></div>
-                        <div class="partner-logo"><span>🏅 UP Handball Union</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-trophy" style="color: var(--color-orange-gold); margin-right: 8px;"></i>Sports Federation</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-building" style="color: var(--color-primary-accent); margin-right: 8px;"></i>Varanasi CSR Club</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-school" style="color: var(--color-primary); margin-right: 8px;"></i>Shiv Nagar High</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-handshake" style="color: var(--color-accent-orange); margin-right: 8px;"></i>Indian NGO Alliance</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-bolt" style="color: var(--color-orange-gold); margin-right: 8px;"></i>Apex Power Corp</span></div>
+                        <div class="partner-logo"><span><i class="fa-solid fa-award" style="color: var(--color-accent-gold); margin-right: 8px;"></i>UP Handball Union</span></div>
                     </div>
                 </div>
             </div>
@@ -655,7 +670,7 @@
                 <div class="news-grid">
                     <!-- News 1 -->
                     <div class="news-card">
-                        <div class="news-date">📅 15 June, 2026</div>
+                        <div class="news-date"><i class="fa-solid fa-calendar-days" style="color: var(--color-orange-gold); margin-right: 6px;"></i>15 June, 2026</div>
                         <h3>Upcoming Academy Selection Trials</h3>
                         <p>Open handball trials for boys and girls under-16. Join the S.N. Pandey Handball Academy with
                             100% scholarship support.</p>
@@ -663,7 +678,7 @@
                     </div>
                     <!-- News 2 -->
                     <div class="news-card">
-                        <div class="news-date">📅 22 June, 2026</div>
+                        <div class="news-date"><i class="fa-solid fa-calendar-days" style="color: var(--color-orange-gold); margin-right: 6px;"></i>22 June, 2026</div>
                         <h3>State-Level Championship Trials</h3>
                         <p>Preparation camps and selection matches begin for the upcoming state handball cup to
                             represent our district team.</p>
@@ -671,7 +686,7 @@
                     </div>
                     <!-- News 3 -->
                     <div class="news-card">
-                        <div class="news-date">📅 05 July, 2026</div>
+                        <div class="news-date"><i class="fa-solid fa-calendar-days" style="color: var(--color-orange-gold); margin-right: 6px;"></i>05 July, 2026</div>
                         <h3>Village CSR Sports & Health Camp</h3>
                         <p>Launching a 3-day health, hygiene, and sports kit distribution campaign in the outer rural
                             sectors of Varanasi.</p>
@@ -692,24 +707,24 @@
 
                     <ul class="contact-details-list">
                         <li>
-                            <span class="detail-icon">📍</span>
+                            <span class="detail-icon"><i class="fas fa-map-marker-alt"></i></span>
                             <span class="detail-txt">C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi</span>
                         </li>
                         <li>
-                            <span class="detail-icon">📞</span>
+                            <span class="detail-icon"><i class="fas fa-phone-alt"></i></span>
                             <span class="detail-txt">+91 85768 78787</span>
                         </li>
                         <li>
-                            <span class="detail-icon">✉️</span>
+                            <span class="detail-icon"><i class="fas fa-envelope"></i></span>
                             <span class="detail-txt">www.snpandeykhelsansthantrust.com</span>
                         </li>
                     </ul>
 
                     <div class="social-links-container">
-                        <a href="#" class="social-icon-btn" aria-label="Facebook">📘</a>
-                        <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
-                        <a href="#" class="social-icon-btn" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-icon-btn" aria-label="YouTube">📺</a>
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <!-- <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                        <a href="#" class="social-icon-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="contact-quick-map">
@@ -733,7 +748,7 @@
                 <div class="logo-container">
                     <a href="index.html">
                         <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                            style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                            style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
                         <div class="brand-text">
                             <span class="brand-name">SNP <span>Handball</span></span>
                             <span class="brand-tagline">Sports Trust & NGO</span>
@@ -748,7 +763,7 @@
             </div>
 
             <!-- Quick Links -->
-            <div class="footer-col col-links">
+            <div class="footer-col col-links" style="margin-top: 25px;">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -759,7 +774,7 @@
             </div>
 
             <!-- Programs -->
-            <div class="footer-col col-programs">
+            <div class="footer-col col-programs" style="margin-top: 25px;">
                 <h4>Our Programs</h4>
                 <ul>
                     <li><a href="academy.html">Handball Academy</a></li>
@@ -769,7 +784,7 @@
             </div>
 
             <!-- Contact, Social & Registration details -->
-            <div class="footer-col col-contact-reg">
+            <div class="footer-col col-contact-reg" style="margin-top: 25px;">
                 <h4>Contact & Registration</h4>
                 <p class="footer-address">
                     C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi
@@ -785,10 +800,10 @@
                 </div>
                 <!-- Social Icons inside Footer -->
                 <div class="footer-social-links">
-                    <a href="#" class="footer-social-btn" aria-label="Facebook">📘</a>
-                    <a href="#" class="footer-social-btn" aria-label="Instagram">📸</a>
-                    <a href="#" class="footer-social-btn" aria-label="Twitter">🐦</a>
-                    <a href="#" class="footer-social-btn" aria-label="YouTube">📺</a>
+                    <a href="#" class="footer-social-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
+                    <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </div>
