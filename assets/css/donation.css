@@ -1,0 +1,766 @@
+/* ==========================================================================
+   DONATION PAGE SPECIFIC STYLES - SNP SPORTS TRUST & NGO
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Section: Donation Page Banner / Header
+   -------------------------------------------------------------------------- */
+.donation-banner {
+    background: linear-gradient(135deg, rgba(10, 25, 47, 0.95) 0%, rgba(15, 46, 92, 0.98) 100%), 
+                url('../images/sports-hero.png') center/cover no-repeat;
+    padding: var(--spacing-16) 0;
+    text-align: center;
+    color: var(--color-white);
+    border-bottom: 4px solid var(--color-orange-gold);
+}
+
+.donation-banner .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+.donation-banner h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-3);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.donation-tagline {
+    font-size: var(--font-size-lg);
+    font-family: var(--font-secondary);
+    color: var(--color-orange-gold);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: var(--spacing-2);
+}
+
+.donation-banner p {
+    font-size: var(--font-size-base);
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Section Common: Section Header & Taglines
+   -------------------------------------------------------------------------- */
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-12);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-3);
+    position: relative;
+    padding-bottom: var(--spacing-3);
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-orange-gold);
+    border-radius: var(--radius-full);
+}
+
+.section-subtitle-text {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+}
+
+.section-tagline {
+    display: block;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    color: var(--color-orange-gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--spacing-2);
+}
+
+/* --------------------------------------------------------------------------
+   Section 1: Donation Purposes
+   -------------------------------------------------------------------------- */
+.purpose-section {
+    background-color: var(--color-white);
+}
+
+.purposes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+.purpose-card {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border-top: 3px solid var(--color-primary-light);
+    transition: all var(--transition-normal);
+}
+
+.purpose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-top-color: var(--color-orange-gold);
+    background-color: var(--color-white);
+}
+
+.purp-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-3);
+    display: inline-block;
+    transition: transform var(--transition-normal);
+}
+
+.purpose-card:hover .purp-icon {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.purpose-card h3 {
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-2);
+    font-weight: 700;
+}
+
+.purpose-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.45;
+}
+
+/* --------------------------------------------------------------------------
+   Section 2: Payment Methods & Gateway Split Layout
+   -------------------------------------------------------------------------- */
+.payment-methods-section {
+    background-color: var(--color-light-bg);
+}
+
+.gateway-grid-split {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: var(--spacing-10);
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+/* Left Column: Direct Transfer (UPI QR & Bank Details) */
+.transfer-info-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+/* UPI QR Code Card */
+.upi-qr-card {
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--color-orange-gold);
+}
+
+.upi-qr-card h3 {
+    color: var(--color-white);
+    font-size: var(--font-size-xl);
+    margin-bottom: 2px;
+}
+
+.qr-container-wrapper {
+    display: flex;
+    gap: var(--spacing-6);
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.qr-box {
+    background-color: var(--color-white);
+    padding: var(--spacing-3);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Illustrative Premium CSS QR Vector */
+.qr-code-vector {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: var(--color-white);
+}
+
+.qr-corner {
+    border: 6px solid var(--color-primary-dark);
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    border-radius: 2px;
+}
+
+.qr-corner.top-left { top: 0; left: 0; }
+.qr-corner.top-right { top: 0; right: 0; }
+.qr-corner.bottom-left { bottom: 0; left: 0; }
+
+.qr-center-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, var(--color-accent-orange) 0%, var(--color-orange-gold) 100%);
+    color: var(--color-white);
+    font-family: var(--font-secondary);
+    font-size: 0.65rem;
+    font-weight: 900;
+    padding: 3px 5px;
+    border-radius: var(--radius-sm);
+    border: 2px solid var(--color-white);
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow-sm);
+}
+
+.qr-dots-group {
+    position: absolute;
+    top: 36px;
+    left: 36px;
+    width: 28px;
+    height: 28px;
+    border: 3px dotted var(--color-primary-dark);
+    opacity: 0.7;
+}
+
+.qr-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.upi-id-label {
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.upi-id-val {
+    font-family: var(--font-secondary);
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--color-orange-gold);
+    line-height: 1.2;
+}
+
+.secure-badge {
+    font-size: 0.7rem;
+    color: var(--color-success);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: var(--spacing-1);
+    letter-spacing: 0.5px;
+}
+
+/* Bank Details Info Box */
+.bank-details-box {
+    background-color: var(--color-white);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--color-primary);
+    border-top: 1px solid var(--color-light-gray);
+    border-bottom: 1px solid var(--color-light-gray);
+    border-right: 1px solid var(--color-light-gray);
+}
+
+.bank-details-box h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-2);
+    font-weight: 700;
+}
+
+.bank-details-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bank-details-table td {
+    padding: var(--spacing-2) 0;
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid rgba(15, 46, 92, 0.05);
+}
+
+.bank-details-table tr:last-child td {
+    border-bottom: none;
+}
+
+.bank-details-table td:first-child {
+    font-weight: 600;
+    color: var(--color-text-muted);
+}
+
+.bank-details-table td:last-child {
+    font-weight: 700;
+    color: var(--color-primary-dark);
+}
+
+/* Right Column: Online Payment Gateway Mockup */
+.gateway-card {
+    background-color: var(--color-white);
+    color: var(--color-text-dark);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-xl);
+    border-top: 4px solid var(--color-orange-gold);
+    border-left: 1px solid var(--color-light-gray);
+    border-right: 1px solid var(--color-light-gray);
+    border-bottom: 1px solid var(--color-light-gray);
+}
+
+.gateway-card h2 {
+    color: var(--color-primary-dark);
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-2);
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.payment-form .form-row {
+    display: flex;
+    gap: var(--spacing-4);
+}
+
+.payment-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-2);
+    flex: 1;
+}
+
+.payment-form label {
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-primary-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.payment-form input,
+.payment-form select {
+    padding: var(--spacing-3) var(--spacing-4);
+    background-color: var(--color-light-bg);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--radius-md);
+    color: var(--color-text-dark);
+    font-family: var(--font-primary);
+    font-size: 0.95rem;
+    transition: all var(--transition-fast);
+}
+
+.payment-form input::placeholder {
+    color: var(--color-text-light);
+}
+
+.payment-form input:focus,
+.payment-form select:focus {
+    outline: none;
+    border-color: var(--color-primary-accent);
+    background-color: var(--color-white);
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.15);
+}
+
+/* Preset Amount Selection Grid */
+.amount-presets {
+    display: flex;
+    gap: var(--spacing-2);
+    margin-bottom: 2px;
+}
+
+.amount-btn {
+    flex: 1;
+    padding: var(--spacing-3) 0;
+    font-family: var(--font-secondary);
+    font-size: 0.9rem;
+    font-weight: 800;
+    border: 2px solid var(--color-light-gray);
+    border-radius: var(--radius-md);
+    color: var(--color-text-muted);
+    background-color: var(--color-white);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.amount-btn:hover {
+    border-color: var(--color-orange-gold);
+    color: var(--color-orange-gold);
+}
+
+.amount-btn.active {
+    background-color: var(--color-orange-gold);
+    border-color: var(--color-orange-gold);
+    color: var(--color-white);
+    box-shadow: var(--shadow-gold);
+}
+
+#custom-amount-input {
+    display: none;
+}
+
+.btn-submit-donation {
+    width: 100%;
+    padding: var(--spacing-4);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: var(--radius-full);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    margin-top: var(--spacing-4);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-submit-donation:hover {
+    background-color: var(--color-orange-gold);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+}
+
+/* --------------------------------------------------------------------------
+   Section 3: Tax Benefits
+   -------------------------------------------------------------------------- */
+.tax-benefits-section {
+    background-color: var(--color-white);
+}
+
+.tax-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-8);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+.tax-card {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    border-bottom: 3px solid var(--color-primary-light);
+    transition: all var(--transition-normal);
+}
+
+.tax-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-bottom-color: var(--color-orange-gold);
+    background-color: var(--color-white);
+}
+
+.tax-icon-wrapper {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-4);
+    display: inline-block;
+    transition: transform var(--transition-normal);
+}
+
+.tax-card:hover .tax-icon-wrapper {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.tax-card h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-3);
+    font-weight: 700;
+}
+
+.tax-card p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   Section 4: Impact Trainee Stories
+   -------------------------------------------------------------------------- */
+.impact-stories-section {
+    background-color: var(--color-light-bg);
+}
+
+.stories-grid-split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-6);
+}
+
+.story-card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    transition: all var(--transition-normal);
+    border: 1px solid var(--color-light-gray);
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--color-orange-gold);
+}
+
+.story-img-col {
+    flex: 0 0 35%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-primary-dark);
+}
+
+.story-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.story-card:hover .story-img {
+    transform: scale(1.05);
+}
+
+.story-content-col {
+    flex: 1;
+    padding: var(--spacing-6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.story-tag {
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--color-orange-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--spacing-1);
+    display: block;
+}
+
+.story-content-col h3 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-3);
+    font-weight: 700;
+}
+
+.story-content-col p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-bottom: var(--spacing-3);
+}
+
+.story-content-col p:last-child {
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Section: Responsive Media Queries
+   -------------------------------------------------------------------------- */
+
+/* Breakpoint: 1200px and below (Desktop to Tablet transition) */
+@media screen and (max-width: 1200px) {
+    .donation-banner h1 {
+        font-size: var(--font-size-4xl);
+    }
+
+    .purposes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+}
+
+/* Breakpoint: 1024px and below (Tablet Viewports) */
+@media screen and (max-width: 1024px) {
+    .gateway-grid-split {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        gap: var(--spacing-8);
+    }
+
+    .tax-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+
+    .tax-card:last-child {
+        grid-column: span 2;
+    }
+
+    .stories-grid-split {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        gap: var(--spacing-6);
+    }
+}
+
+/* Breakpoint: 768px and below (Mobile Viewports) */
+@media screen and (max-width: 768px) {
+    .donation-banner {
+        padding: var(--spacing-12) 0;
+    }
+
+    .donation-banner h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .donation-tagline {
+        font-size: var(--font-size-base);
+    }
+
+    .section-header h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .purpose-card {
+        padding: var(--spacing-5);
+    }
+
+    .purposes-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .tax-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+        gap: var(--spacing-6);
+    }
+
+    .tax-card:last-child {
+        grid-column: auto;
+    }
+}
+
+/* Breakpoint: 480px and below (Mobile Portrait) */
+@media screen and (max-width: 480px) {
+    .donation-banner {
+        padding: var(--spacing-10) var(--spacing-4);
+    }
+
+    .donation-banner h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .qr-container-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--spacing-4);
+    }
+
+    .qr-info {
+        align-items: center;
+    }
+
+    .upi-id-val {
+        font-size: 1rem;
+    }
+
+    .bank-details-box {
+        padding: var(--spacing-4);
+    }
+
+    .bank-details-table td {
+        font-size: 0.8rem;
+    }
+
+    .gateway-card {
+        padding: var(--spacing-6) var(--spacing-4);
+    }
+
+    .gateway-card h2 {
+        font-size: var(--font-size-2xl);
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: var(--spacing-4);
+    }
+
+    .amount-presets {
+        flex-wrap: wrap;
+        gap: var(--spacing-2);
+    }
+
+    .amount-btn {
+        flex: 0 0 calc(50% - var(--spacing-1));
+        padding: var(--spacing-2) 0;
+    }
+
+    .story-card {
+        flex-direction: column;
+    }
+
+    .story-img-col {
+        flex: 0 0 180px;
+        height: 180px;
+        width: 100%;
+    }
+
+    .story-content-col {
+        padding: var(--spacing-5);
+    }
+}

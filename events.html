@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View S.N. Pandey Sports Trust dynamic events. Live schedules for handball tournaments, selection trials, fitness camps, and CSR social drives.">
+    <title>Dynamic Events | S.N. Pandey Khel Sansthan Trust</title>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Theme Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Page Specific Stylesheet -->
+    <link rel="stylesheet" href="assets/css/events.css">
+</head>
+<body>
+
+    <!-- Top Info Bar (Multi-Language, Quick Contact & Socials) -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-info">
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    www.snpandeykhelsansthantrust.com
+                </span>
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                    +91 85768 78787
+                </span>
+            </div>
+            
+            <div class="top-bar-actions">
+                <span style="font-family: var(--font-secondary); opacity: 0.85; margin-right: 10px;">Reg No.: 202400996036397</span>
+                <div class="lang-selector">
+                    <button id="lang-switch-btn" class="lang-btn">
+                        <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.33-.14 2 0 .67.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56-.6 1.11-1.06 2.31-1.38 3.56zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.34-.16-2 0-.66.07-1.34.16-2h4.68c.09.66.16 1.34.16 2 0 .66-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.33.14-2 0-.67-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"/></svg>
+                        <span class="current-lang">English</span>
+                        <span>▼</span>
+                    </button>
+                    <ul id="lang-dropdown-menu" class="lang-dropdown">
+                        <li data-lang="en">English</li>
+                        <li data-lang="hi">हिन्दी (Hindi)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header (Sticky Header) -->
+    <header id="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="SNP Sports Trust Logo" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                    <div class="brand-text">
+                        <span class="brand-name">SNP <span>Handball</span></span>
+                        <span class="brand-tagline">Sports Trust & NGO</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Hamburger toggle for mobile menu -->
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links (Flat, No submenus) -->
+            <nav id="main-nav-menu" class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Management / Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="programs.html" class="nav-link">Programs & Activities</a>
+                </div>
+                <div class="nav-item">
+                    <a href="academy.html" class="nav-link">Handball Academy</a>
+                </div>
+                <div class="nav-item">
+                    <a href="csr.html" class="nav-link">CSR & Partnership</a>
+                </div>
+                <div class="nav-item">
+                    <a href="gallery.html" class="nav-link">Media & Gallery</a>
+                </div>
+                <!-- <div class="nav-item">
+                    <a href="donation.html" class="nav-link">Donation</a>
+                </div> -->
+                <div class="nav-item">
+                    <a href="events.html" class="nav-link" style="color: var(--color-orange-gold);">Events</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </nav>
+
+            <!-- CTA Donation Button -->
+            <div class="header-actions">
+                <a href="donation.html" class="btn-donate">Donate Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="primary-content">
+
+        <!-- ==========================================
+             SECTION: EVENTS HERO BANNER
+             ========================================== -->
+        <section class="events-banner">
+            <div class="container">
+                <span class="events-tagline">Live Trust Calendar</span>
+                <h1>Dynamic Event System</h1>
+                <p>Register for upcoming leagues, daily skill clinics, selection trials, and community social drives.</p>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             SECTION: DYNAMIC EVENTS FILTER & LISTINGS
+             ========================================== -->
+        <section class="events-section section-padding">
+            <div class="container">
+                
+                <!-- Filter Tabs -->
+                <div class="events-filter-wrapper">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="tournaments">Tournaments & Notices</button>
+                    <button class="filter-btn" data-filter="camps">Skill & Fitness Camps</button>
+                    <button class="filter-btn" data-filter="csr">CSR Social Drives</button>
+                </div>
+
+                <!-- Events Layout Grid (6 Items) -->
+                <div class="events-main-grid" id="events-grid">
+                    
+                    <!-- Event 1: Tournament (Memorial Cup) -->
+                    <div class="event-grid-item" data-category="tournaments">
+                        <div class="event-card">
+                            <div class="event-img-wrapper">
+                                <img src="assets/images/prog_tournaments.png" alt="Handball Tournament Action" class="event-img">
+                                <span class="event-tag badge-tournament">Tournament</span>
+                            </div>
+                            <div class="event-content">
+                                <div class="event-meta-info">
+                                    <span class="meta-date">📅 Oct 12 - 15, 2026</span>
+                                    <span class="meta-venue">📍 Rohaniya Ground, Varanasi</span>
+                                </div>
+                                <h3>S.N. Pandey Memorial Handball Cup</h3>
+                                <p class="event-desc">Annual flagship regional tournament open to registered school-level sub-junior and junior teams. Includes championship shield trophy, standard sports kits distributions, and merit plaques.</p>
+                                
+                                <div class="event-notices">
+                                    <strong>Tournament Notice:</strong> Entry slots close strictly on Sept 30. No spot entry fees. Medical certificates are mandatory for all athletes.
+                                </div>
+                                <button class="btn-register-trigger" data-event="S.N. Pandey Memorial Cup">Register Team Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2: Camp (Skill Summer) -->
+                    <div class="event-grid-item" data-category="camps">
+                        <div class="event-card">
+                            <div class="event-img-wrapper">
+                                <img src="assets/images/prog_coaching.png" alt="Handball Skill Camp Drills" class="event-img">
+                                <span class="event-tag badge-camp">Fitness Camp</span>
+                            </div>
+                            <div class="event-content">
+                                <div class="event-meta-info">
+                                    <span class="meta-date">📅 June 15 - 20, 2026</span>
+                                    <span class="meta-venue">📍 SNP Academy Campus</span>
+                                </div>
+                                <h3>Summer Agility & Skill Handball Camp</h3>
+                                <p class="event-desc">An intensive 5-day skill development workshop led by Head Coach Vinod Kumar. Focuses on quick dribbling play, court offensive formations, high-vertical jumps, and muscle recovery guidance.</p>
+                                
+                                <div class="event-notices">
+                                    <strong>Age Requirement:</strong> Open for trainees aged 10-17 years (Boys & Girls). Fully funded study libraries books and dietary protein shakes are provided daily.
+                                </div>
+                                <button class="btn-register-trigger" data-event="Summer Agility Skill Camp">Apply for Camp</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 3: CSR Drive (Drinking Water) -->
+                    <div class="event-grid-item" data-category="csr">
+                        <div class="event-card">
+                            <div class="event-img-wrapper">
+                                <img src="assets/images/prog_csr.png" alt="CSR Clean Drinking Water setup" class="event-img">
+                                <span class="event-tag badge-csr">CSR Drive</span>
+                            </div>
+                            <div class="event-content">
+                                <div class="event-meta-info">
+                                    <span class="meta-date">📅 June 28, 2026</span>
+                                    <span class="meta-venue">📍 Harhua Block Schools</span>
+                                </div>
+                                <h3>Panchayat Drinking Water CSR Campaign</h3>
+                                <p class="event-desc">Collaborating with corporate sponsors to install 4 certified pure drinking water filtration zones inside primary panchayat schools, benefiting 1,000+ local children.</p>
+                                
+                                <div class="event-notices">
+                                    <strong>Employee Engagement:</strong> Corporate volunteers are welcome to assist the trustees in school site assemblies and clean water awareness distributions.
+                                </div>
+                                <button class="btn-register-trigger" data-event="Panchayat Water CSR Drive">Volunteer/Join Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 4: Tournament (Trials) -->
+                    <div class="event-grid-item" data-category="tournaments">
+                        <div class="event-card">
+                            <div class="event-img-wrapper">
+                                <img src="assets/images/sports_hero_slide.png" alt="District selection trials" class="event-img">
+                                <span class="event-tag badge-tournament">Trials</span>
+                            </div>
+                            <div class="event-content">
+                                <div class="event-meta-info">
+                                    <span class="meta-date">📅 July 15, 2026</span>
+                                    <span class="meta-venue">📍 Varanasi Sports Complex</span>
+                                </div>
+                                <h3>District Handball Selection Trials</h3>
+                                <p class="event-desc">Official selection trials to shortlist the best boys and girls handball talent to represent Varanasi District in the upcoming UP State sub-junior championships.</p>
+                                
+                                <div class="event-notices">
+                                    <strong>Trial Notices:</strong> Carry 2 passport photos, Birth Certificate xerox, and School ID cards. Selection trials begin at 08:00 AM sharp.
+                                </div>
+                                <button class="btn-register-trigger" data-event="District Selection Trials">Register Trainee</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 5: Camp (Physio Screening) -->
+                    <div class="event-grid-item" data-category="camps">
+                        <div class="event-card">
+                            <div class="event-img-wrapper">
+                                <img src="assets/images/prog_camps.png" alt="Endurance Physiological screenings" class="event-img">
+                                <span class="event-tag badge-camp">Health Camp</span>
+                            </div>
+                            <div class="event-content">
+                                <div class="event-meta-info">
+                                    <span class="meta-date">📅 August 05, 2026</span>
+                                    <span class="meta-venue">📍 SNP Academy Care Cabin</span>
+                                </div>
+                                <h3>Physiological Fitness & Health Screening</h3>
+                                <p class="event-desc">Quarterly physical checkup camps offering stamina endurance tests, vertical jump assessments, physical therapy recover clinics, and customized diet schedule charts.</p>
+                                
+                                <div class="event-notices">
+                                    <strong>Medical Crew:</strong> Led by Dr. Sneha Patel and volunteer physical physiotherapists. Free vitamin supplements distributed to all academy trainees.
+                                </div>
+                                <button class="btn-register-trigger" data-event="Physio Screening Fitness Camp">Register Trainee</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 6: CSR Drive (Tree Plantation) -->
+                    <div class="event-grid-item" data-category="csr">
+                        <div class="event-card">
+                            <div class="event-img-wrapper">
+                                <img src="assets/images/prog_education.png" alt="Tree plantation green sports zones" class="event-img">
+                                <span class="event-tag badge-csr">CSR Drive</span>
+                            </div>
+                            <div class="event-content">
+                                <div class="event-meta-info">
+                                    <span class="meta-date">📅 August 20, 2026</span>
+                                    <span class="meta-venue">📍 Chandpur School Campus</span>
+                                </div>
+                                <h3>Varanasi Green Sports Tree Plantation</h3>
+                                <p class="event-desc">A cooperative drive to plant 500 shade-giving neem and fruit trees along the outer borders of government school handball grounds, creating clean, green sports environment.</p>
+                                
+                                <div class="event-notices">
+                                    <strong>Community Welfare:</strong> Supported by Mr. Rahul Yadav and educational volunteers. Saplings and planting tools are sponsored by trust donors.
+                                </div>
+                                <button class="btn-register-trigger" data-event="Varanasi Tree CSR Drive">Volunteer/Join Now</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             INTERACTIVE REGISTRATION MODAL POPUP FORM
+             ========================================== -->
+        <div id="event-signup-modal" class="event-modal-overlay">
+            <div class="modal-form-card">
+                <span class="modal-form-close">&times;</span>
+                <h3>Register for Event</h3>
+                <span id="selected-event-name" class="selected-event-badge">S.N. Pandey Memorial Handball Cup</span>
+                
+                <form action="#" class="modal-signup-form" onsubmit="event.preventDefault(); alert('Congratulations! Your preliminary registration request has been secure under our trust records.'); document.getElementById('event-signup-modal').classList.remove('show');">
+                    <div class="form-group">
+                        <label for="reg-name">Full Name / Representative Name</label>
+                        <input type="text" id="reg-name" required placeholder="Enter full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-phone">Contact Number</label>
+                        <input type="tel" id="reg-phone" required placeholder="e.g. 9876543210">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="reg-age">Age / Player Count</label>
+                            <input type="number" id="reg-age" min="1" required placeholder="e.g. 15">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg-location">Village / Location</label>
+                            <input type="text" id="reg-location" required placeholder="e.g. Rohaniya, Varanasi">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit-registration">Submit Registration</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Comprehensive Footer Section -->
+    <footer id="main-footer">
+        <div class="container footer-container-grid">
+            <!-- About Trust -->
+            <div class="footer-col col-about">
+                <h4>About Our Trust</h4>
+                <p>
+                    S.N. Pandey Khel Sansthan Trust is dedicated to empowering grassroots athletes and fostering rural development. Through professional training leagues and CSR alliances, we build sustainable educational and sports frameworks.
+                </p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="footer-col col-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Trust</a></li>
+                    <li><a href="team.html">Management Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Programs -->
+            <div class="footer-col col-programs">
+                <h4>Our Programs</h4>
+                <ul>
+                    <li><a href="academy.html">Handball Academy</a></li>
+                    <li><a href="programs.html">Sports & CSR Activities</a></li>
+                    <li><a href="csr.html">CSR & Partnership</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact, Social & Registration details -->
+            <div class="footer-col col-contact-reg">
+                <h4>Contact & Registration</h4>
+                <p class="footer-address">
+                    C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi
+                </p>
+                <p class="footer-contact-info">
+                    Mob: +91 85768 78787<br>
+                    Email: www.snpandeykhelsansthantrust.com
+                </p>
+                <!-- Trust Badge inside Footer -->
+                <div class="footer-trust-badge-small">
+                    <span class="reg-label">Govt. Reg. No.</span>
+                    <span class="reg-number">202400996036397</span>
+                </div>
+                <!-- Social Icons inside Footer -->
+                <div class="footer-social-links">
+                    <a href="#" class="footer-social-btn" aria-label="Facebook">📘</a>
+                    <a href="#" class="footer-social-btn" aria-label="Instagram">📸</a>
+                    <a href="#" class="footer-social-btn" aria-label="Twitter">🐦</a>
+                    <a href="#" class="footer-social-btn" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bottom Line and Copyright -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 S.N. Pandey Khel Sansthan Trust. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918576878787" target="_blank" class="whatsapp-floating" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path d="M12.012 2c-5.506 0-9.988 4.481-9.988 9.987 0 1.763.46 3.42 1.262 4.876L2 22l5.282-1.385c1.4.762 2.99 1.196 4.717 1.196 5.508 0 9.99-4.482 9.99-9.988 0-5.505-4.482-9.987-9.99-9.987zm0 18.286c-1.577 0-3.107-.42-4.453-1.213l-.319-.19-3.31.867.88-3.226-.207-.331c-.87-1.389-1.33-3.003-1.33-4.679 0-4.568 3.718-8.285 8.285-8.285 4.566 0 8.283 3.717 8.283 8.285 0 4.569-3.717 8.286-8.283 8.286zm4.551-6.223c-.249-.125-1.478-.73-1.708-.812-.229-.084-.396-.125-.561.125-.167.249-.645.812-.79.979-.147.166-.293.187-.542.062-.25-.125-1.054-.388-2.008-1.24-.741-.662-1.242-1.48-1.387-1.73-.146-.249-.016-.384.109-.508.112-.112.249-.292.374-.437.125-.146.166-.249.25-.417.083-.166.041-.312-.02-.437-.063-.125-.561-1.353-.769-1.853-.203-.489-.41-.422-.561-.429-.146-.008-.312-.008-.479-.008-.166 0-.437.062-.665.312-.229.25-.874.853-.874 2.081 0 1.229.895 2.415.999 2.561.103.146 1.761 2.689 4.267 3.771.596.257 1.061.411 1.423.526.6.19 1.146.163 1.579.099.482-.072 1.478-.604 1.686-1.187.208-.583.208-1.083.146-1.187-.062-.105-.208-.167-.458-.292z"/>
+        </svg>
+    </a>
+
+    <!-- Theme Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Inline Filter & Modal JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dynamic Event Category Filtering
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const eventItems = document.querySelectorAll('.event-grid-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Toggle active classes inside buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    eventItems.forEach(item => {
+                        const itemCategory = item.getAttribute('data-category');
+
+                        if (filterValue === 'all' || itemCategory === filterValue) {
+                            item.style.display = 'block';
+                            item.style.animation = 'scaleUpFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) both';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Interactive Registration Form Modal Popup
+            const modal = document.getElementById('event-signup-modal');
+            const modalClose = document.querySelector('.modal-form-close');
+            const triggerButtons = document.querySelectorAll('.btn-register-trigger');
+            const selectedEventName = document.getElementById('selected-event-name');
+
+            triggerButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const eventName = btn.getAttribute('data-event');
+                    selectedEventName.textContent = eventName;
+                    modal.classList.add('show');
+                });
+            });
+
+            if (modalClose) {
+                modalClose.addEventListener('click', () => {
+                    modal.classList.remove('show');
+                });
+            }
+
+            if (modal) {
+                modal.addEventListener('click', (e) => {
+                    if (e.target === modal || e.target === modalClose) {
+                        modal.classList.remove('show');
+                    }
+                });
+            }
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

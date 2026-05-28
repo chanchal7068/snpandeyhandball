@@ -1,0 +1,564 @@
+/* ==========================================================================
+   ABOUT US PAGE SPECIFIC STYLES - SNP SPORTS TRUST & NGO
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Section: About Page Banner / Header
+   -------------------------------------------------------------------------- */
+.about-banner {
+    background: linear-gradient(135deg, rgba(15, 46, 92, 0.95) 0%, rgba(10, 25, 47, 0.98) 100%), 
+                url('../images/sports-hero.png') center/cover no-repeat;
+    padding: var(--spacing-16) 0;
+    text-align: center;
+    color: var(--color-white);
+    border-bottom: 4px solid var(--color-orange-gold);
+}
+
+.about-banner h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: 800;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-3);
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.about-banner p {
+    font-size: var(--font-size-lg);
+    font-family: var(--font-secondary);
+    color: var(--color-orange-gold);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   Section: Trust Introduction & History
+   -------------------------------------------------------------------------- */
+.trust-intro-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-white);
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.intro-content h2 {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-4);
+    position: relative;
+    padding-bottom: var(--spacing-3);
+}
+
+.intro-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-orange-gold);
+}
+
+.intro-content p {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-4);
+}
+
+.intro-content blockquote {
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-2) var(--spacing-4);
+    font-style: italic;
+    color: var(--color-primary-light);
+    margin: var(--spacing-4) 0;
+    background-color: var(--color-light-bg);
+}
+
+.intro-visuals {
+    position: relative;
+}
+
+.history-card {
+    background-color: var(--color-light-bg);
+    border-left: 4px solid var(--color-accent-gold);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.history-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-3);
+    font-size: var(--font-size-xl);
+}
+
+/* --------------------------------------------------------------------------
+   Section: Vision & Mission (Desktop vs Mobile Separated)
+   -------------------------------------------------------------------------- */
+.vision-mission-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-light-bg);
+}
+
+/* Desktop-Only Vision & Mission Layout (Side-by-Side Cards) */
+.vision-grid-desktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-8);
+}
+
+.vision-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-normal);
+    border-top: 4px solid var(--color-primary);
+}
+
+.vision-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.vision-card.mission {
+    border-top-color: var(--color-orange-gold);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-4);
+    color: var(--color-primary);
+}
+
+.vision-card.mission .card-icon {
+    color: var(--color-orange-gold);
+}
+
+.vision-card h3 {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-4);
+}
+
+.vision-card p {
+    color: var(--color-text-muted);
+}
+
+/* Mobile-Only Vision & Mission Layout (Stacked Slider Layout) */
+.vision-stacked-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.vision-mobile-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-lg);
+    border-left: 5px solid var(--color-primary);
+    box-shadow: var(--shadow-sm);
+}
+
+.vision-mobile-card.mission {
+    border-left-color: var(--color-orange-gold);
+}
+
+.vision-mobile-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-2);
+}
+
+/* --------------------------------------------------------------------------
+   Section: Objectives & Core Values
+   -------------------------------------------------------------------------- */
+.objectives-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-12);
+}
+
+.section-header h2 {
+    font-size: var(--font-size-3xl);
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-3);
+}
+
+.section-header p {
+    color: var(--color-text-muted);
+    font-family: var(--font-secondary);
+}
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-6);
+}
+
+.objective-item {
+    background-color: var(--color-light-bg);
+    padding: var(--spacing-6);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.objective-item:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.objective-item:hover h4 {
+    color: var(--color-white);
+}
+
+.objective-num {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-orange-gold);
+    line-height: 1;
+    margin-bottom: var(--spacing-3);
+    font-family: var(--font-secondary);
+}
+
+.objective-item h4 {
+    margin-bottom: var(--spacing-2);
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+}
+
+/* Core Values Section */
+.values-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-light-bg);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-8);
+}
+
+.value-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.value-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-bottom: 4px solid var(--color-accent-gold);
+}
+
+.value-card h4 {
+    font-size: var(--font-size-xl);
+    color: var(--color-primary-dark);
+    margin: var(--spacing-3) 0 var(--spacing-2);
+}
+
+.value-card p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+}
+
+/* --------------------------------------------------------------------------
+   Section: Legal Registration & PAN / Documents (Desktop vs Mobile Separated)
+   -------------------------------------------------------------------------- */
+.legal-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-white);
+}
+
+.legal-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: var(--spacing-10);
+    align-items: flex-start;
+}
+
+.legal-info h3 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-4);
+}
+
+.reg-list {
+    margin-top: var(--spacing-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.reg-item {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-3);
+    background-color: var(--color-light-bg);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--color-primary-accent);
+}
+
+.reg-label {
+    font-weight: 700;
+    color: var(--color-text-dark);
+}
+
+.reg-value {
+    color: var(--color-text-muted);
+}
+
+/* Desktop-Only Premium Document Table Layout */
+.doc-table-desktop {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-top: var(--spacing-4);
+}
+
+.doc-table-desktop th {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-4);
+    text-align: left;
+    font-family: var(--font-secondary);
+}
+
+.doc-table-desktop td {
+    padding: var(--spacing-4);
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-light-gray);
+    color: var(--color-text-muted);
+}
+
+.doc-table-desktop tr:last-child td {
+    border-bottom: none;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-2);
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+    padding: var(--spacing-2) var(--spacing-4);
+    border-radius: var(--radius-full);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-download:hover {
+    background-color: var(--color-orange-gold);
+    color: var(--color-white);
+}
+
+/* Mobile-Only Document Accordion List */
+.doc-list-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-4);
+}
+
+.doc-card-mobile {
+    background-color: var(--color-light-bg);
+    border: 1px solid var(--color-light-gray);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4);
+}
+
+.doc-card-mobile h4 {
+    color: var(--color-primary-dark);
+    margin-bottom: var(--spacing-2);
+}
+
+.doc-card-mobile .meta {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-3);
+}
+
+/* --------------------------------------------------------------------------
+   Section: Future Goals / Targets
+   -------------------------------------------------------------------------- */
+.goals-section {
+    padding: var(--spacing-16) 0;
+    background-color: var(--color-light-bg);
+    border-bottom: 3px solid var(--color-orange-gold);
+}
+
+.goals-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    padding: var(--spacing-8) 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--color-primary-light);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-item {
+    padding: var(--spacing-4) var(--spacing-10);
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: var(--color-white);
+    border: 4px solid var(--color-orange-gold);
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -10px;
+}
+
+.timeline-content {
+    padding: var(--spacing-6);
+    background-color: var(--color-white);
+    position: relative;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-2);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES FOR ABOUT PAGE (about.css specific)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Breakpoint: 1366px and below
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1366px) {
+    .objectives-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. Breakpoint: 1024px and below (Tablet Viewports)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+
+    .legal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. Breakpoint: 768px and below (Mobile Viewports Divider)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .about-banner h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 21px;
+        top: 25px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. Breakpoint: 480px and below (Mobile Portrait)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-banner {
+        padding: var(--spacing-10) 0;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. Breakpoint: 364px and below (Compact Mobile)
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 364px) {
+    .timeline-content {
+        padding: var(--spacing-4);
+    }
+    
+    .timeline-item {
+        padding-left: 50px;
+    }
+    
+    .timeline::after {
+        left: 21px;
+    }
+    
+    .timeline-item::after {
+        left: 11px;
+    }
+}

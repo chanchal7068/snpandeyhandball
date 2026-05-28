@@ -1,0 +1,451 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN BREAKPOINTS - SNP SPORTS TRUST & NGO
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Breakpoint: 1920px and up
+   Description: Ultra-wide desktop grids & enlarged hero graphics
+   -------------------------------------------------------------------------- */
+@media screen and (min-width: 1920px) {
+    .header-container,
+    .top-bar-container,
+    .mega-menu-container {
+        max-width: 1850px;
+    }
+    
+    .hero-main-title {
+        font-size: 4.5rem;
+        max-width: 1000px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+    
+    .hero-tagline {
+        font-size: 1.5rem;
+        max-width: 800px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   2. Breakpoint: 1366px and below
+   Description: Standard laptop responsive refinements
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1366px) {
+    .nav-menu {
+        gap: var(--spacing-4);
+    }
+    
+    .btn-donate {
+        padding: var(--spacing-2) var(--spacing-4);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   3. Breakpoint: 1200px and below (Desktop to Mobile/Tablet Transition)
+   Description: Responsive Menu collapse to Drawer for touch devices
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 1200px) {
+    /* Top Bar adjustments */
+    .top-bar-info {
+        gap: var(--spacing-3);
+    }
+
+    /* Enable Hamburger Toggle */
+    .mobile-toggle {
+        display: block;
+    }
+
+    /* Transform main nav menu into a drawer overlay */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100vh;
+        background-color: var(--color-primary-dark);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 100px var(--spacing-8) var(--spacing-8);
+        gap: var(--spacing-2);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.25);
+        transition: right var(--transition-slow);
+        overflow-y: auto;
+        z-index: 1001;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-link {
+        color: var(--color-white);
+        font-size: 1.1rem;
+        width: 100%;
+        padding: var(--spacing-3) 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .nav-link::after {
+        display: none; /* Disable underline effect on mobile */
+    }
+
+    /* Style active toggles for dropdown items */
+    .dropdown-toggle::after {
+        content: ' ▼';
+        font-size: 0.75rem;
+        transition: transform var(--transition-normal);
+    }
+
+    .nav-dropdown.active .dropdown-toggle::after,
+    .mega-dropdown.active .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+
+    /* Standard Dropdown in Mobile Drawer */
+    .dropdown-menu {
+        position: static;
+        transform: none !important;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        background-color: rgba(255,255,255,0.03);
+        border-radius: var(--radius-md);
+        box-shadow: none;
+        border-top: none;
+        border-left: 2px solid var(--color-orange-gold);
+        width: 100%;
+        min-width: 0;
+        margin-top: var(--spacing-2);
+        padding: var(--spacing-1) 0;
+    }
+
+    .nav-dropdown.active .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu li a {
+        color: rgba(255,255,255,0.8);
+        padding: var(--spacing-2) var(--spacing-4);
+    }
+
+    .dropdown-menu li a:hover {
+        background-color: rgba(255,255,255,0.05);
+        color: var(--color-orange-gold);
+        padding-left: var(--spacing-6);
+    }
+
+    /* Mega Menu in Mobile Drawer */
+    .mega-menu {
+        position: static;
+        transform: none !important;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+        background-color: rgba(255,255,255,0.03);
+        box-shadow: none;
+        border-top: none;
+        border-left: 2px solid var(--color-orange-gold);
+        width: 100%;
+        padding: var(--spacing-4) 0;
+        margin-top: var(--spacing-2);
+    }
+
+    .mega-dropdown.active .mega-menu {
+        display: block;
+    }
+
+    .mega-menu-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-4);
+        padding: 0 var(--spacing-4);
+    }
+
+    .mega-menu-column h4 {
+        color: var(--color-white);
+        font-size: 0.85rem;
+        margin-bottom: var(--spacing-2);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .mega-menu-column ul li a {
+        color: rgba(255,255,255,0.7);
+        padding: var(--spacing-2) 0;
+    }
+
+    .mega-menu-column ul li a:hover {
+        color: var(--color-orange-gold);
+    }
+
+    .mega-menu-featured {
+        background-color: rgba(255,255,255,0.02);
+        border-left: 2px solid var(--color-orange-gold);
+    }
+
+    .mega-menu-featured h5, 
+    .mega-menu-featured p {
+        color: rgba(255,255,255,0.9);
+    }
+
+    /* Mobile hamburger active cross effect */
+    .mobile-toggle.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: var(--color-white);
+    }
+
+    .mobile-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-toggle.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: var(--color-white);
+    }
+
+    /* Premium Hero Tablet responsive styles */
+    .hero-main-title {
+        font-size: 2.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    .hero-tagline {
+        font-size: 1.1rem;
+    }
+
+    /* Home Page Sections Tablet overrides */
+    .intro-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+    .initiatives-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-4);
+    }
+    .chairman-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+    .chairman-image-col {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .programs-deck {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-4);
+    }
+    .achieve-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-4);
+    }
+    .contact-quick-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-8);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   4. Breakpoint: 768px and below
+   Description: Tablet Portrait and Mobile Landscape Layouts
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    .top-bar-info span:not(:first-child) {
+        display: none; /* Hide secondary info like working hours/address */
+    }
+    
+    .premium-hero {
+        min-height: 90vh;
+        padding: var(--spacing-12) var(--spacing-4);
+    }
+    .hero-trust-badge {
+        padding: var(--spacing-2) var(--spacing-4);
+    }
+    .hero-trust-logo {
+        width: 36px;
+        height: 36px;
+    }
+    .hero-trust-name {
+        font-size: 0.75rem;
+    }
+    .hero-trust-reg {
+        font-size: 0.65rem;
+    }
+    .hero-main-title {
+        font-size: 2.2rem;
+    }
+    .hero-subtitle {
+        font-size: 1.15rem;
+    }
+    .hero-tagline {
+        font-size: 1rem;
+    }
+    .hero-cta-btn {
+        width: calc(50% - var(--spacing-2));
+        justify-content: center;
+        font-size: 0.85rem;
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+
+    .whatsapp-floating {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-icon {
+        width: 26px;
+        height: 26px;
+    }
+
+    /* Home Page Sections Mobile Landscape overrides */
+    .section-padding {
+        padding: var(--spacing-10) 0;
+    }
+    .section-title {
+        font-size: 1.85rem;
+    }
+    .counters-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-6);
+    }
+    .counter-num {
+        font-size: 2.6rem;
+    }
+    .programs-deck {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .achieve-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .gallery-item {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        aspect-ratio: 4/3;
+    }
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --------------------------------------------------------------------------
+   5. Breakpoint: 480px and below
+   Description: Standard Mobile Portrait Mode Layouts
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+    .top-bar-container {
+        justify-content: center;
+    }
+
+    .top-bar-info {
+        display: none; /* Hide contacts completely, keep only language toggle / search */
+    }
+
+    .header-container {
+        padding: var(--spacing-3) var(--spacing-4);
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.55rem;
+        letter-spacing: 1px;
+    }
+
+    .premium-hero {
+        min-height: 95vh;
+        padding: var(--spacing-10) var(--spacing-3);
+    }
+    .hero-main-title {
+        font-size: 1.8rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-tagline {
+        font-size: 0.85rem;
+    }
+    .hero-cta-group {
+        flex-direction: column;
+        gap: var(--spacing-2);
+    }
+    .hero-cta-btn {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .btn-donate {
+        font-size: 0.8rem;
+        padding: var(--spacing-2) var(--spacing-4);
+    }
+
+    /* Home Page Sections Mobile Portrait overrides */
+    .section-title {
+        font-size: 1.55rem;
+    }
+    .section-desc {
+        font-size: 0.95rem;
+    }
+    .trust-years-badge {
+        padding: var(--spacing-3) var(--spacing-4);
+        width: 100%;
+        justify-content: center;
+    }
+    .badge-num {
+        font-size: 2rem;
+    }
+    .badge-text strong {
+        font-size: 1rem;
+    }
+    .initiatives-grid {
+        grid-template-columns: 1fr;
+    }
+    .counters-grid {
+        grid-template-columns: 1fr;
+    }
+    .programs-deck {
+        grid-template-columns: 1fr;
+    }
+    .achieve-grid {
+        grid-template-columns: 1fr;
+    }
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+    .test-quote {
+        font-size: 1.1rem;
+    }
+    .test-slide {
+        padding: 0 var(--spacing-2);
+    }
+    .detail-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+    .detail-txt {
+        font-size: 0.85rem;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   6. Breakpoint: 364px and below
+   Description: Tiny budget devices responsive protection
+   -------------------------------------------------------------------------- */
+@media screen and (max-width: 364px) {
+    .brand-tagline {
+        display: none; /* Remove tagline to save header height */
+    }
+
+    .btn-donate {
+        display: none; /* Hide donate CTA button in header to fit logo on tiny screens */
+    }
+}

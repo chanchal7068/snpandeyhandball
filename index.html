@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SNP Sports Trust and NGO - Empowering athletes, promoting handball, and driving sustainable CSR initiatives for grassroots sports development.">
+    <title>SNP Sports Trust & NGO | Premium CSR & Handball Development</title>
+
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Theme Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Top Info Bar (Multi-Language, Quick Contact & Socials) -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="top-bar-info">
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path
+                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                    </svg>
+                    www.snpandeykhelsansthantrust.com
+                </span>
+                <span>
+                    <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                        <path
+                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                    </svg>
+                    +91 85768 78787
+                </span>
+            </div>
+
+            <div class="top-bar-actions">
+                <!-- Multi-Language Support Dropdown -->
+                <div class="lang-selector">
+                    <button id="lang-switch-btn" class="lang-btn">
+                        <svg style="width: 14px; height: 14px; fill: currentColor;" viewBox="0 0 24 24">
+                            <path
+                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.33-.14 2 0 .67.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56-.6 1.11-1.06 2.31-1.38 3.56zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.34-.16-2 0-.66.07-1.34.16-2h4.68c.09.66.16 1.34.16 2 0 .66-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.33.14-2 0-.67-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" />
+                        </svg>
+                        <span class="current-lang">English</span>
+                        <span>▼</span>
+                    </button>
+                    <ul id="lang-dropdown-menu" class="lang-dropdown">
+                        <li data-lang="en">English</li>
+                        <li data-lang="hi">हिन्दी (Hindi)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header (Sticky Header) -->
+    <header id="main-header">
+        <div class="header-container">
+            <!-- Brand Logo -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
+                        style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                    <div class="brand-text">
+                        <span class="brand-name">S.N.Pandey <span>Handball</span></span>
+                        <span class="brand-tagline">Sports Trust & NGO</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Hamburger toggle for mobile menu -->
+            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav id="main-nav-menu" class="nav-menu">
+                <div class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </div>
+                <div class="nav-item">
+                    <a href="team.html" class="nav-link">Management / Team</a>
+                </div>
+                <div class="nav-item">
+                    <a href="programs.html" class="nav-link">Programs & Activities</a>
+                </div>
+                <div class="nav-item">
+                    <a href="academy.html" class="nav-link">Handball Academy</a>
+                </div>
+                <div class="nav-item">
+                    <a href="csr.html" class="nav-link">CSR & Partnership</a>
+                </div>
+                <div class="nav-item">
+                    <a href="gallery.html" class="nav-link">Media & Gallery</a>
+                </div>
+                <!-- <div class="nav-item">
+                    <a href="donation.html" class="nav-link">Donation</a>
+                </div> -->
+                <div class="nav-item">
+                    <a href="events.html" class="nav-link">Events</a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </nav>
+
+            <!-- CTA Donation Button -->
+            <div class="header-actions">
+                <a href="donation.html" class="btn-donate">Donate Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="primary-content">
+        <section id="hero-section" class="premium-hero">
+            <!-- Background Slideshow -->
+            <div class="hero-slideshow">
+                <div class="hero-slide active"
+                    style="background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.85)), url('assets/images/sports_hero_slide.png');">
+                </div>
+                <div class="hero-slide"
+                    style="background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.85)), url('assets/images/education_hero_slide.png');">
+                </div>
+                <div class="hero-slide"
+                    style="background-image: linear-gradient(rgba(10, 25, 47, 0.7), rgba(10, 25, 47, 0.85)), url('assets/images/youth_dev_hero_slide.png');">
+                </div>
+            </div>
+
+            <!-- Hero Content Overlay -->
+            <div class="hero-content-container">
+                <!-- Trust Badge & Reg Number -->
+                <div class="hero-trust-badge">
+                    <img src="assets/images/logo.png" alt="S.N. Pandey Khel Sansthan Trust Logo"
+                        class="hero-trust-logo">
+                    <div class="hero-trust-info">
+                        <span class="hero-trust-name">S.N. Pandey Khel Sansthan Trust</span>
+                        <span class="hero-trust-reg">Govt. Reg. No. 202400996036397</span>
+                    </div>
+                </div>
+
+                <h1 class="hero-main-title">Empowering Youth Through Sports, Education & Social Development</h1>
+
+                <div class="hero-subtitle-container">
+                    <h3 class="hero-subtitle">S.N. Pandey Khel Sansthan Trust</h3>
+                    <p class="hero-tagline">“Building Future Champions & Responsible Citizens”</p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta-group">
+                    <a href="donation.html" class="hero-cta-btn btn-donate-now">
+                        <span class="btn-icon">❤️</span> Donate Now
+                    </a>
+                    <a href="academy.html" class="hero-cta-btn btn-join-program">
+                        <span class="btn-icon">🏆</span> Join Program
+                    </a>
+                    <a href="contact.html?type=volunteer" class="hero-cta-btn btn-become-volunteer">
+                        <span class="btn-icon">🤝</span> Become Volunteer
+                    </a>
+                    <a href="contact.html" class="hero-cta-btn btn-contact-us">
+                        <span class="btn-icon">📞</span> Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Slideshow Indicators -->
+            <div class="hero-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </section>
+
+        <!-- Section: About Trust (Quick Intro) -->
+        <section id="about-intro" class="section-padding">
+            <div class="container intro-grid">
+                <div class="intro-left">
+                    <span class="section-tagline">Welcome to Our Trust</span>
+                    <h2 class="section-title">Nurturing Athletics, Education & Grassroots Integration</h2>
+                    <p class="section-desc">
+                        S.N. Pandey Khel Sansthan Trust (Reg. No. 202400996036397) was established to transform the
+                        lives of youth in rural and underprivileged sectors. By combining systematic, professional
+                        handball training structures with high-quality educational support, we guide our athletes toward
+                        becoming elite national champions and highly responsible, productive citizens.
+                    </p>
+                    <div class="trust-years-badge">
+                        <span class="badge-num">20+</span>
+                        <div class="badge-text">
+                            <strong>Years</strong>
+                            <span>Collective Grassroots Expertise</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-right">
+                    <div class="intro-features">
+                        <!-- Vision Card -->
+                        <div class="intro-feat-card">
+                            <div class="feat-icon">👁️</div>
+                            <div class="feat-content">
+                                <h3>Our Vision</h3>
+                                <p>To cultivate global handball champions and outstanding community leaders who drive
+                                    sustainable social development.</p>
+                            </div>
+                        </div>
+                        <!-- Mission Card -->
+                        <div class="intro-feat-card">
+                            <div class="feat-icon">🚀</div>
+                            <div class="feat-content">
+                                <h3>Our Mission</h3>
+                                <p>To build elite training academies, implement CSR community support projects, and
+                                    empower female athletes.</p>
+                            </div>
+                        </div>
+                        <!-- Social Impact Card -->
+                        <div class="intro-feat-card">
+                            <div class="feat-icon">❤️</div>
+                            <div class="feat-content">
+                                <h3>Social Impact</h3>
+                                <p>Fostering discipline, modern physical health, high academic standards, and national
+                                    integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Counters -->
+        <section id="counters" class="section-padding counters-dark">
+            <div class="container counters-grid">
+                <div class="counter-item">
+                    <span class="counter-num"><span class="count-value" data-target="5000">0</span>+</span>
+                    <span class="counter-label">Students Benefited</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-num"><span class="count-value" data-target="100">0</span>+</span>
+                    <span class="counter-label">Sports Events</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-num"><span class="count-value" data-target="50">0</span>+</span>
+                    <span class="counter-label">CSR Activities</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-num"><span class="count-value" data-target="20">0</span>+</span>
+                    <span class="counter-label">Training Camps</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Key Initiatives -->
+        <section id="key-initiatives" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Making a Difference</span>
+                    <h2 class="section-title">Our Key Initiatives</h2>
+                    <p class="section-subtitle-text">Empowering rural youth and constructing strong community frameworks
+                        across diverse sectors.</p>
+                </div>
+                <div class="initiatives-grid">
+                    <!-- 1. Sports Development -->
+                    <div class="initiative-card">
+                        <div class="init-icon">🏆</div>
+                        <h3>Sports Development</h3>
+                        <p>Providing professional Olympic coaching pathways, athletic kits, and modern sports facilities
+                            at the grassroots level.</p>
+                    </div>
+                    <!-- 2. Handball Academy -->
+                    <div class="initiative-card">
+                        <div class="init-icon">🤾</div>
+                        <h3>Handball Academy</h3>
+                        <p>Our flagship handball academy identifying elite young athletes and grooming them under
+                            Olympic standards.</p>
+                    </div>
+                    <!-- 3. Rural Education -->
+                    <div class="initiative-card">
+                        <div class="init-icon">📚</div>
+                        <h3>Rural Education</h3>
+                        <p>Bridging academic gaps by supporting primary schools, supplying books, and organizing tuition
+                            setups.</p>
+                    </div>
+                    <!-- 4. Women Empowerment -->
+                    <div class="initiative-card">
+                        <div class="init-icon">👩</div>
+                        <h3>Women Empowerment</h3>
+                        <p>Creating specialized sports clinics and leadership programs for girls to foster confidence
+                            and independence.</p>
+                    </div>
+                    <!-- 5. Health Awareness -->
+                    <div class="initiative-card">
+                        <div class="init-icon">🍎</div>
+                        <h3>Health Awareness</h3>
+                        <p>Organizing local health camps, medical screenings, and distribution of sanitary supplies and
+                            nutrition guides.</p>
+                    </div>
+                    <!-- 6. Youth Skill Programs -->
+                    <div class="initiative-card">
+                        <div class="init-icon">🛠️</div>
+                        <h3>Youth Skill Programs</h3>
+                        <p>Providing vocational training, digital literacy, and professional coaching certifications to
+                            secure livelihoods.</p>
+                    </div>
+                    <!-- 7. Environmental Campaigns -->
+                    <div class="initiative-card">
+                        <div class="init-icon">🌱</div>
+                        <h3>Environmental Campaigns</h3>
+                        <p>Hosting mass tree plantation drives, plastic-free sports matches, and community cleanliness
+                            campaigns.</p>
+                    </div>
+                    <!-- 8. Scholarship Programs -->
+                    <div class="initiative-card">
+                        <div class="init-icon">🎓</div>
+                        <h3>Scholarship Programs</h3>
+                        <p>Sponsoring talented student athletes with academic fee waivers and complete high-performance
+                            training kits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Chairman / Founder Message -->
+        <section id="chairman-msg" class="section-padding">
+            <div class="container chairman-grid">
+                <div class="chairman-image-col">
+                    <div class="chairman-img-wrapper">
+                        <img src="assets/images/chairman_portrait.png" alt="Dr. A.K. Pandey - Chairman & Founder"
+                            class="chairman-img">
+                        <div class="chairman-badge">Visionary Leader</div>
+                    </div>
+                </div>
+                <div class="chairman-content-col">
+                    <span class="section-tagline">Leadership Message</span>
+                    <h2 class="section-title">Message From Our Founder & Chairman</h2>
+                    <blockquote class="chairman-quote">
+                        "We believe that sports is not just a game, but a powerful catalyst that cultivates character,
+                        discipline, and community resilience."
+                    </blockquote>
+                    <p class="chairman-text">
+                        Welcome to S.N. Pandey Khel Sansthan Trust. Our foundational objective is to discover the
+                        massive athletic talent locked inside our country's rural sectors, and give them the coaching,
+                        facilities, and academic support they deserve to represent India.
+                    </p>
+                    <p class="chairman-text">
+                        Through our collaborative efforts with corporate CSR partners, government bodies, and social
+                        workers, we are expanding our reach to build sustainable ecosystems where education and athletic
+                        excellence thrive hand-in-hand. We invite you to join us in guiding these future champions.
+                    </p>
+                    <div class="chairman-signature">
+                        <span class="sig-name">Dr. A.K. Pandey</span>
+                        <span class="sig-title">Founder & Chairman, S.N. Pandey Khel Sansthan Trust</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Featured Programs -->
+        <section id="featured-programs" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Impact Programs</span>
+                    <h2 class="section-title">Featured Programs</h2>
+                    <p class="section-subtitle-text">Dedicated grassroots initiatives driving athletic mastery,
+                        corporate collaborations, and youth leadership.</p>
+                </div>
+                <div class="programs-deck">
+                    <!-- 1. Handball Coaching -->
+                    <div class="program-card">
+                        <div class="prog-img-wrapper">
+                            <img src="assets/images/prog_coaching.png" alt="Handball Coaching Program" class="prog-img">
+                            <div class="prog-overlay"><a href="academy.html" class="btn-prog-link">Learn More &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="prog-content">
+                            <span class="prog-tag">Athletic Core</span>
+                            <h3>Handball Coaching</h3>
+                            <p>Professional training leagues under national-level coaches for junior and senior levels.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 2. State-Level Tournaments -->
+                    <div class="program-card">
+                        <div class="prog-img-wrapper">
+                            <img src="assets/images/prog_tournaments.png" alt="State-Level Tournaments"
+                                class="prog-img">
+                            <div class="prog-overlay"><a href="events.html" class="btn-prog-link">Learn More &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="prog-content">
+                            <span class="prog-tag">Competitions</span>
+                            <h3>State Tournaments</h3>
+                            <p>Organizing annual tournaments under sports federations to provide competitive experience.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 3. Village Sports Camps -->
+                    <div class="program-card">
+                        <div class="prog-img-wrapper">
+                            <img src="assets/images/prog_camps.png" alt="Village Sports Camps" class="prog-img">
+                            <div class="prog-overlay"><a href="events.html" class="btn-prog-link">Learn More &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="prog-content">
+                            <span class="prog-tag">Community Outreach</span>
+                            <h3>Village Sports Camps</h3>
+                            <p>7-day intensive coaching bootcamps in remote locations supplying free handball kits.</p>
+                        </div>
+                    </div>
+                    <!-- 4. Educational Support -->
+                    <div class="program-card">
+                        <div class="prog-img-wrapper">
+                            <img src="assets/images/prog_education.png" alt="Educational Support" class="prog-img">
+                            <div class="prog-overlay"><a href="programs.html" class="btn-prog-link">Learn More
+                                    &rarr;</a></div>
+                        </div>
+                        <div class="prog-content">
+                            <span class="prog-tag">Empowerment</span>
+                            <h3>Educational Support</h3>
+                            <p>Offering scholarships, books, and study aids to ensure zero educational drops.</p>
+                        </div>
+                    </div>
+                    <!-- 5. CSR Partnerships -->
+                    <div class="program-card">
+                        <div class="prog-img-wrapper">
+                            <img src="assets/images/prog_csr.png" alt="CSR Partnerships" class="prog-img">
+                            <div class="prog-overlay"><a href="csr.html" class="btn-prog-link">Learn More &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="prog-content">
+                            <span class="prog-tag">Alliances</span>
+                            <h3>CSR Partnerships</h3>
+                            <p>Collaborating with companies to sponsor athletic grounds and clean water setups.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Achievements & Recognition -->
+        <section id="achievements" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Gaining Trust</span>
+                    <h2 class="section-title">Achievements & Recognition</h2>
+                    <p class="section-subtitle-text">A testament to our unwavering dedication, institutional
+                        transparency, and athletic standards.</p>
+                </div>
+                <div class="achieve-grid">
+                    <div class="achieve-item">
+                        <div class="achieve-num">🎖️</div>
+                        <h3>Verified Certificates</h3>
+                        <p>Fully compliant with registered sports NGO frameworks and audited government regulations.</p>
+                    </div>
+                    <div class="achieve-item">
+                        <div class="achieve-num">🏆</div>
+                        <h3>Prestigious Awards</h3>
+                        <p>Recipient of district and state athletic development honors for rural talent integration.</p>
+                    </div>
+                    <div class="achieve-item">
+                        <div class="achieve-num">📰</div>
+                        <h3>Media Coverage</h3>
+                        <p>Gaining wide acclaim in state publications for handball matches and community services.</p>
+                    </div>
+                    <div class="achieve-item">
+                        <div class="achieve-num">🏛️</div>
+                        <h3>Government Recognition</h3>
+                        <p>Partnering with government schools and local bodies under grassroot empowerment directives.
+                        </p>
+                    </div>
+                    <div class="achieve-item">
+                        <div class="achieve-num">⚽</div>
+                        <h3>Federation Affiliations</h3>
+                        <p>Sustained partnerships with regional sports federations ensuring proper league avenues.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Gallery -->
+        <section id="gallery" class="section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Visual Highlights</span>
+                    <h2 class="section-title">Our Gallery</h2>
+                    <p class="section-subtitle-text">Moments of dedication, sportsmanship, and impactful community
+                        outreach captured live.</p>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Item 1 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/sports_hero_slide.png" alt="Sports Events" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Sports Events</h3>
+                            <span>Action matches</span>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/prog_coaching.png" alt="Training Camps" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Training Camps</h3>
+                            <span>Coaching clinics</span>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/prog_csr.png" alt="CSR Activities" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>CSR Activities</h3>
+                            <span>Corporate backing</span>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/youth_dev_hero_slide.png" alt="Social Work" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Social Work</h3>
+                            <span>Empowering communities</span>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="gallery-item">
+                        <img src="assets/images/sports-hero.png" alt="Awards Ceremony" class="gallery-img">
+                        <div class="gallery-overlay">
+                            <h3>Awards Ceremony</h3>
+                            <span>Celebrating excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: var(--spacing-8);">
+                    <a href="gallery.html" class="btn-donate">View Full Gallery &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Testimonials -->
+        <section id="testimonials" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Community Voices</span>
+                    <h2 class="section-title">What People Say</h2>
+                    <p class="section-subtitle-text">Hear directly from the players, parents, and coaches whose lives
+                        have been touched by the trust.</p>
+                </div>
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slides">
+                        <!-- Slide 1 -->
+                        <div class="test-slide active">
+                            <span class="quote-symbol">“</span>
+                            <p class="test-quote">
+                                The trust provided me not just with top-tier handball coaching, but sponsored my
+                                complete academic education. S.N. Pandey Khel Sansthan Trust made my dreams of playing
+                                at the state tournaments a reality.
+                            </p>
+                            <div class="test-author">
+                                <strong>Rohan Singh</strong>
+                                <span>Elite Handball Player</span>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="test-slide">
+                            <span class="quote-symbol">“</span>
+                            <p class="test-quote">
+                                As a parent, I was worried about my daughter's sports expenses. The trust provided free
+                                equipment and safe transport, encouraging her to win the district championship. We are
+                                extremely grateful.
+                            </p>
+                            <div class="test-author">
+                                <strong>Meera Devi</strong>
+                                <span>Parent of Athlete</span>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="test-slide">
+                            <span class="quote-symbol">“</span>
+                            <p class="test-quote">
+                                Working with the trust has been amazing. Their dedication to transparent CSR execution
+                                and genuine grassroots development sets a national benchmark for sports NGOs.
+                            </p>
+                            <div class="test-author">
+                                <strong>Mr. Rajesh Sen</strong>
+                                <span>State Sports Official</span>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="test-slide">
+                            <span class="quote-symbol">“</span>
+                            <p class="test-quote">
+                                Under Dr. A.K. Pandey's guidance, we have structured professional pathways ensuring
+                                athletes gain physical robustness, tactical intelligence, and strong moral values.
+                            </p>
+                            <div class="test-author">
+                                <strong>Coach Vinod Kumar</strong>
+                                <span>Head Handball Coach</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test-indicators">
+                        <span class="test-indicator active" data-test-slide="0"></span>
+                        <span class="test-indicator" data-test-slide="1"></span>
+                        <span class="test-indicator" data-test-slide="2"></span>
+                        <span class="test-indicator" data-test-slide="3"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Sponsors & Partners -->
+        <section id="sponsors" class="section-padding bg-light sponsors-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Our Partners</span>
+                    <h2 class="section-title">Sponsors & Partners</h2>
+                    <p class="section-subtitle-text">Collaborating with elite institutions, corporations, and social
+                        bodies to drive change.</p>
+                </div>
+                <div class="partners-marquee-container">
+                    <div class="partners-marquee">
+                        <div class="partner-logo"><span>🏆 Sports Federation</span></div>
+                        <div class="partner-logo"><span>🏢 Varanasi CSR Club</span></div>
+                        <div class="partner-logo"><span>🏫 Shiv Nagar High</span></div>
+                        <div class="partner-logo"><span>🤝 Indian NGO Alliance</span></div>
+                        <div class="partner-logo"><span>⚡ Apex Power Corp</span></div>
+                        <div class="partner-logo"><span>🏅 UP Handball Union</span></div>
+                        <!-- Duplicated for seamless loop -->
+                        <div class="partner-logo"><span>🏆 Sports Federation</span></div>
+                        <div class="partner-logo"><span>🏢 Varanasi CSR Club</span></div>
+                        <div class="partner-logo"><span>🏫 Shiv Nagar High</span></div>
+                        <div class="partner-logo"><span>🤝 Indian NGO Alliance</span></div>
+                        <div class="partner-logo"><span>⚡ Apex Power Corp</span></div>
+                        <div class="partner-logo"><span>🏅 UP Handball Union</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Latest News & Events -->
+        <section id="news-events" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tagline">Stay Updated</span>
+                    <h2 class="section-title">Latest News & Events</h2>
+                    <p class="section-subtitle-text">Stay informed about our upcoming trials, tournaments, and social
+                        campaigns.</p>
+                </div>
+                <div class="news-grid">
+                    <!-- News 1 -->
+                    <div class="news-card">
+                        <div class="news-date">📅 15 June, 2026</div>
+                        <h3>Upcoming Academy Selection Trials</h3>
+                        <p>Open handball trials for boys and girls under-16. Join the S.N. Pandey Handball Academy with
+                            100% scholarship support.</p>
+                        <a href="events.html" class="news-readmore">Read Details &rarr;</a>
+                    </div>
+                    <!-- News 2 -->
+                    <div class="news-card">
+                        <div class="news-date">📅 22 June, 2026</div>
+                        <h3>State-Level Championship Trials</h3>
+                        <p>Preparation camps and selection matches begin for the upcoming state handball cup to
+                            represent our district team.</p>
+                        <a href="events.html" class="news-readmore">Read Details &rarr;</a>
+                    </div>
+                    <!-- News 3 -->
+                    <div class="news-card">
+                        <div class="news-date">📅 05 July, 2026</div>
+                        <h3>Village CSR Sports & Health Camp</h3>
+                        <p>Launching a 3-day health, hygiene, and sports kit distribution campaign in the outer rural
+                            sectors of Varanasi.</p>
+                        <a href="events.html" class="news-readmore">Read Details &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Contact Quick Section -->
+        <section id="contact-quick" class="section-padding bg-navy text-white">
+            <div class="container contact-quick-grid">
+                <div class="contact-quick-info">
+                    <span class="section-tagline">Reach Us</span>
+                    <h2>Contact Our Varanasi Office</h2>
+                    <p class="contact-intro-text">Have questions about donations, admissions, or volunteering? Connect
+                        with us immediately.</p>
+
+                    <ul class="contact-details-list">
+                        <li>
+                            <span class="detail-icon">📍</span>
+                            <span class="detail-txt">C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi</span>
+                        </li>
+                        <li>
+                            <span class="detail-icon">📞</span>
+                            <span class="detail-txt">+91 85768 78787</span>
+                        </li>
+                        <li>
+                            <span class="detail-icon">✉️</span>
+                            <span class="detail-txt">www.snpandeykhelsansthantrust.com</span>
+                        </li>
+                    </ul>
+
+                    <div class="social-links-container">
+                        <a href="#" class="social-icon-btn" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon-btn" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon-btn" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="contact-quick-map">
+                    <div class="map-iframe-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.8488730999554!2d82.94636737597143!3d25.309257626992645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2ded4835f8d9%3A0x6b44a2c4a9386d49!2sShiv%20Nagar%20Colony%2C%20Chandpur%2C%20Industrial%20Estate%2C%20Varanasi%2C%20Uttar%20Pradesh%20221106!5e0!3m2!1sen!2sin!4v1716890000000!5m2!1sen!2sin"
+                            width="100%" height="350" style="border:0; border-radius: var(--radius-xl);"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Comprehensive Footer Section -->
+    <footer id="main-footer">
+        <div class="container footer-container-grid">
+            <!-- About Trust -->
+            <div class="footer-col col-about">
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
+                            style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+                        <div class="brand-text">
+                            <span class="brand-name">SNP <span>Handball</span></span>
+                            <span class="brand-tagline">Sports Trust & NGO</span>
+                        </div>
+                    </a>
+                </div>
+                <p>
+                    S.N. Pandey Khel Sansthan Trust is dedicated to empowering grassroots athletes and fostering rural
+                    development. Through professional training leagues and CSR alliances, we build sustainable
+                    educational and sports frameworks.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col col-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About The Trust</a></li>
+                    <li><a href="team.html">Management Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Programs -->
+            <div class="footer-col col-programs">
+                <h4>Our Programs</h4>
+                <ul>
+                    <li><a href="academy.html">Handball Academy</a></li>
+                    <li><a href="programs.html">Sports & CSR Activities</a></li>
+                    <li><a href="csr.html">CSR & Partnership</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact, Social & Registration details -->
+            <div class="footer-col col-contact-reg">
+                <h4>Contact & Registration</h4>
+                <p class="footer-address">
+                    C5, Bhama Kunj, Shiv Nagar Colony, Chandpur, Varanasi
+                </p>
+                <p class="footer-contact-info">
+                    Mob: +91 85768 78787<br>
+                    Email: www.snpandeykhelsansthantrust.com
+                </p>
+                <!-- Trust Badge inside Footer -->
+                <div class="footer-trust-badge-small">
+                    <span class="reg-label">Govt. Reg. No.</span>
+                    <span class="reg-number">202400996036397</span>
+                </div>
+                <!-- Social Icons inside Footer -->
+                <div class="footer-social-links">
+                    <a href="#" class="footer-social-btn" aria-label="Facebook">📘</a>
+                    <a href="#" class="footer-social-btn" aria-label="Instagram">📸</a>
+                    <a href="#" class="footer-social-btn" aria-label="Twitter">🐦</a>
+                    <a href="#" class="footer-social-btn" aria-label="YouTube">📺</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Line and Copyright -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 S.N. Pandey Khel Sansthan Trust. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" target="_blank" class="whatsapp-floating" aria-label="Chat on WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 24 24">
+            <path
+                d="M12.012 2c-5.506 0-9.988 4.481-9.988 9.987 0 1.763.46 3.42 1.262 4.876L2 22l5.282-1.385c1.4.762 2.99 1.196 4.717 1.196 5.508 0 9.99-4.482 9.99-9.988 0-5.505-4.482-9.987-9.99-9.987zm0 18.286c-1.577 0-3.107-.42-4.453-1.213l-.319-.19-3.31.867.88-3.226-.207-.331c-.87-1.389-1.33-3.003-1.33-4.679 0-4.568 3.718-8.285 8.285-8.285 4.566 0 8.283 3.717 8.283 8.285 0 4.569-3.717 8.286-8.283 8.286zm4.551-6.223c-.249-.125-1.478-.73-1.708-.812-.229-.084-.396-.125-.561.125-.167.249-.645.812-.79.979-.147.166-.293.187-.542.062-.25-.125-1.054-.388-2.008-1.24-.741-.662-1.242-1.48-1.387-1.73-.146-.249-.016-.384.109-.508.112-.112.249-.292.374-.437.125-.146.166-.249.25-.417.083-.166.041-.312-.02-.437-.063-.125-.561-1.353-.769-1.853-.203-.489-.41-.422-.561-.429-.146-.008-.312-.008-.479-.008-.166 0-.437.062-.665.312-.229.25-.874.853-.874 2.081 0 1.229.895 2.415.999 2.561.103.146 1.761 2.689 4.267 3.771.596.257 1.061.411 1.423.526.6.19 1.146.163 1.579.099.482-.072 1.478-.604 1.686-1.187.208-.583.208-1.083.146-1.187-.062-.105-.208-.167-.458-.292z" />
+        </svg>
+    </a>
+
+    <!-- Theme Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
