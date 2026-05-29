@@ -117,8 +117,12 @@
                     <div class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
                     </div>
-                    <div class="nav-item">
-                        <a href="team.html" class="nav-link">Management / Team</a>
+                    <div class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Management / Team <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="member-registration.html">Member Registration</a></li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="programs.html" class="nav-link">Programs & Activities</a>
@@ -134,6 +138,13 @@
                     </div>
                     <div class="nav-item">
                         <a href="events.html" class="nav-link">Events</a>
+                    </div>
+                    <div class="nav-item nav-dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Download <i class="fas fa-chevron-down" style="font-size: 0.65rem; margin-left: 2px;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="annual-reports.html">Annual Report</a></li>
+                            <li><a href="certificates.html">Event Certificates</a></li>
+                        </ul>
                     </div>
                     <div class="nav-item">
                         <a href="contact.html" class="nav-link">Contact</a>
@@ -400,57 +411,85 @@
         </section>
 
         <!-- ==========================================
-             SECTION 4: IMPACT STORIES
+             SECTION 4: HONORED DONORS
              ========================================== -->
-        <section class="impact-stories-section section-padding bg-light">
+        <section class="donors-list-section section-padding bg-light">
             <div class="container">
                 <div class="section-header text-center">
-                    <span class="section-tagline">Real Outcomes</span>
-                    <h2>Trainee Success Stories</h2>
-                    <p class="section-subtitle-text">Read how community donations directly changed the life path of our
-                        talented village trainees.</p>
+                    <span class="section-tagline">Generous Hearts</span>
+                    <h2>Honored Donors</h2>
+                    <p class="section-subtitle-text">We are extremely grateful for the contributions from our recent supporters who make grassroots athletic dreams possible.</p>
                 </div>
 
-                <div class="stories-grid-split">
-                    <!-- Story 1 -->
-                    <div class="story-card">
-                        <div class="story-img-col">
-                            <img src="assets/images/team/team_head_coach.png" alt="Trainee Rahul Yadav" class="story-img">
-                        </div>
-                        <div class="story-content-col">
-                            <span class="story-tag">From Village Clay to State Shield</span>
-                            <h3>Rahul Yadav's Athletic Leap</h3>
-                            <p>
-                                Son of a marginal farmer in Rohaniya, Rahul Yadav trained on our clay court under Vinod
-                                Kumar. Lacking professional shoes or diet support, trust donors sponsored his complete
-                                daily diet, kit bags, and court gear.
-                            </p>
-                            <p>
-                                Through physical conditioning, Rahul successfully qualified to lead the UP sub-junior
-                                handball team, winning theUP State Shield shield in 2025.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Story 2 -->
-                    <div class="story-card">
-                        <div class="story-img-col">
-                            <img src="assets/images/team/team_senior_coach.png" alt="Trainee Priya Sharma" class="story-img">
-                        </div>
-                        <div class="story-content-col">
-                            <span class="story-tag">Girls Empowerment Story</span>
-                            <h3>Kiran Upadhyay's Goal</h3>
-                            <p>
-                                Residing in a backward sector, Kiran Upadhyay was exceptionally quick but lacked
-                                boarding support or school textbook packs. The trust sponsored her high-school academic
-                                libraries fees and court equipment.
-                            </p>
-                            <p>
-                                Today, Kiran represents our female team lead and has successfully coached junior girls
-                                selection clinics, inspiring 50+ village girls to play handball.
-                            </p>
-                        </div>
-                    </div>
+                <div class="donors-table-container">
+                    <table class="donors-table">
+                        <thead>
+                            <tr>
+                                <th>Donor</th>
+                                <th>Amount</th>
+                                <th>Date</th>
+                                <th>Verification Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="donor-profile">
+                                        <img src="assets/images/team/team_head_coach.png" alt="Donor Rajesh Kumar" class="donor-img">
+                                        <div class="donor-name-info">
+                                            <strong>Rajesh Kumar</strong>
+                                            <span>Varanasi, UP</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="amount-badge">₹25,000</span></td>
+                                <td>May 28, 2026</td>
+                                <td><span class="status-badge verified"><i class="fas fa-check-circle"></i> Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="donor-profile">
+                                        <img src="assets/images/team/team_senior_coach.png" alt="Donor Sonia Singhal" class="donor-img">
+                                        <div class="donor-name-info">
+                                            <strong>Sonia Singhal</strong>
+                                            <span>Noida, NCR</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="amount-badge">₹50,000</span></td>
+                                <td>May 26, 2026</td>
+                                <td><span class="status-badge verified"><i class="fas fa-check-circle"></i> Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="donor-profile">
+                                        <img src="assets/images/logo.png" alt="Donor Apex Power Corp" class="donor-img">
+                                        <div class="donor-name-info">
+                                            <strong>Apex Power Corp (CSR)</strong>
+                                            <span>Corporate Partner</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="amount-badge primary">₹1,50,000</span></td>
+                                <td>May 24, 2026</td>
+                                <td><span class="status-badge verified"><i class="fas fa-check-circle"></i> Verified</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="donor-profile">
+                                        <img src="assets/images/chairman_portrait.png" alt="Donor Dr. Vikram Singh" class="donor-img">
+                                        <div class="donor-name-info">
+                                            <strong>Dr. Vikram Singh</strong>
+                                            <span>Advisory Trustee</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="amount-badge">₹10,000</span></td>
+                                <td>May 20, 2026</td>
+                                <td><span class="status-badge verified"><i class="fas fa-check-circle"></i> Verified</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </section>
