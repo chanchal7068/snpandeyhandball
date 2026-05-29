@@ -78,63 +78,72 @@
 
     <!-- Main Navigation Header (Sticky Header) -->
     <header id="main-header">
-        <div class="header-container">
-            <!-- Brand Logo -->
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                        style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
-                    <!-- <div class="brand-text">
-                        <span class="brand-name">SNP <span>Handball</span></span>
-                        <span class="brand-tagline">Sports Trust & NGO</span>
-                    </div> -->
-                </a>
+        <!-- Top Row: Logo, Brand Text & Donate CTA -->
+        <div class="header-top-row">
+            <div class="header-container">
+                <!-- Brand Logo & Name -->
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
+                            style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;">
+                        <div class="brand-text">
+                            <span class="brand-name">S.N. Pandey</span>
+                            <span class="brand-tagline">Khel Sansthan Trust</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hamburger toggle for mobile menu -->
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Desktop CTA Button -->
+                <div class="header-actions desktop-only">
+                    <a href="donation.html" class="btn-donate">Donate Now</a>
+                </div>
             </div>
+        </div>
 
-            <!-- Hamburger toggle for mobile menu -->
-            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Navigation Links (Flat, No submenus) -->
-            <nav id="main-nav-menu" class="nav-menu">
-                <div class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </div>
-                <div class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
-                </div>
-                <div class="nav-item">
-                    <a href="team.html" class="nav-link">Management / Team</a>
-                </div>
-                <div class="nav-item">
-                    <a href="programs.html" class="nav-link">Programs & Activities</a>
-                </div>
-                <div class="nav-item">
-                    <a href="academy.html" class="nav-link">Handball Academy</a>
-                </div>
-                <div class="nav-item">
-                    <a href="csr.html" class="nav-link">CSR & Partnership</a>
-                </div>
-                <div class="nav-item">
-                    <a href="gallery.html" class="nav-link" style="color: var(--color-orange-gold);">Media & Gallery</a>
-                </div>
-                <!-- <div class="nav-item">
-                    <a href="donation.html" class="nav-link">Donation</a>
-                </div> -->
-                <div class="nav-item">
-                    <a href="events.html" class="nav-link">Events</a>
-                </div>
-                <div class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-            </nav>
-
-            <!-- CTA Donation Button -->
-            <div class="header-actions">
-                <a href="donation.html" class="btn-donate">Donate Now</a>
+        <!-- Bottom Row: Thin Menu Bar -->
+        <div class="header-bottom-row">
+            <div class="header-container">
+                <!-- Navigation Links -->
+                <nav id="main-nav-menu" class="nav-menu">
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="team.html" class="nav-link">Management / Team</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="programs.html" class="nav-link">Programs & Activities</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="academy.html" class="nav-link">Handball Academy</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="csr.html" class="nav-link">CSR & Partnership</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="gallery.html" class="nav-link" style="color: var(--color-orange-gold);">Media & Gallery</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <!-- Donate Now mobile link -->
+                    <div class="nav-item mobile-only">
+                        <a href="donation.html" class="nav-link mobile-donate-link">Donate Now</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -418,6 +427,15 @@
                     <!-- <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
                     <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                 </div>
+
+                <!-- Newsletter Subscription inside Footer -->
+                <div class="footer-newsletter">
+                    <h5>Subscribe to Newsletter</h5>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to S.N. Pandey Khel Sansthan Trust newsletter!'); this.reset();">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </div>
 
@@ -440,81 +458,8 @@
     <!-- Theme Main JS -->
     <script src="assets/js/main.js"></script>
 
-    <!-- Inline Filter & Modal Logic (Vanilla JS) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Category Filter Functionality
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            const galleryItems = document.querySelectorAll('.gallery-grid-item');
-
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Set active state on tab buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    button.classList.add('active');
-
-                    const filterValue = button.getAttribute('data-filter');
-
-                    galleryItems.forEach(item => {
-                        const itemCategory = item.getAttribute('data-category');
-
-                        if (filterValue === 'all' || itemCategory === filterValue) {
-                            item.style.display = 'block';
-                            // Trigger keyframes entry animation
-                            item.style.animation = 'scaleUpFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) both';
-                        } else {
-                            item.style.display = 'none';
-                        }
-                    });
-                });
-            });
-
-            // Lightweight Modal Viewer Functionality
-            const modal = document.getElementById('gallery-modal-viewer');
-            const modalImg = document.getElementById('modal-img');
-            const modalCaption = document.getElementById('modal-caption');
-            const closeBtn = document.querySelector('.modal-close');
-            const zoomableImages = document.querySelectorAll('.zoomable');
-
-            zoomableImages.forEach(img => {
-                img.addEventListener('click', () => {
-                    modal.classList.add('show');
-                    modalImg.src = img.src;
-
-                    // Locate caption text inside card
-                    const captionWrapper = img.closest('.media-card').querySelector('.media-caption h3');
-                    if (captionWrapper) {
-                        modalCaption.textContent = captionWrapper.textContent;
-                    } else {
-                        modalCaption.textContent = img.alt;
-                    }
-                });
-            });
-
-            // Close Modal on Close button click
-            if (closeBtn) {
-                closeBtn.addEventListener('click', () => {
-                    modal.classList.remove('show');
-                });
-            }
-
-            // Close Modal on clicking dark background
-            if (modal) {
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal || e.target === closeBtn) {
-                        modal.classList.remove('show');
-                    }
-                });
-            }
-
-            // Close Modal on Escape keypress
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape' && modal.classList.contains('show')) {
-                    modal.classList.remove('show');
-                }
-            });
-        });
-    </script>
+    <!-- Page Specific Script -->
+    <script src="assets/js/gallery/gallery.js"></script>
 </body>
 
 </html>

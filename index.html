@@ -76,63 +76,72 @@
 
     <!-- Main Navigation Header (Sticky Header) -->
     <header id="main-header">
-        <div class="header-container">
-            <!-- Brand Logo -->
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                        style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
-                    <!-- <div class="brand-text">
-                        <span class="brand-name">S.N.Pandey <span>Handball</span></span>
-                        <span class="brand-tagline">Sports Trust & NGO</span>
-                    </div> -->
-                </a>
+        <!-- Top Row: Logo, Brand Text & Donate CTA -->
+        <div class="header-top-row">
+            <div class="header-container">
+                <!-- Brand Logo & Name -->
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
+                            style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;">
+                        <div class="brand-text">
+                            <span class="brand-name">S.N. Pandey</span>
+                            <span class="brand-tagline">Khel Sansthan Trust</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hamburger toggle for mobile menu -->
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Desktop CTA Button -->
+                <div class="header-actions desktop-only">
+                    <a href="donation.html" class="btn-donate">Donate Now</a>
+                </div>
             </div>
+        </div>
 
-            <!-- Hamburger toggle for mobile menu -->
-            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Navigation Links -->
-            <nav id="main-nav-menu" class="nav-menu">
-                <div class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </div>
-                <div class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
-                </div>
-                <div class="nav-item">
-                    <a href="team.html" class="nav-link">Management / Team</a>
-                </div>
-                <div class="nav-item">
-                    <a href="programs.html" class="nav-link">Programs & Activities</a>
-                </div>
-                <div class="nav-item">
-                    <a href="academy.html" class="nav-link">Handball Academy</a>
-                </div>
-                <div class="nav-item">
-                    <a href="csr.html" class="nav-link">CSR & Partnership</a>
-                </div>
-                <div class="nav-item">
-                    <a href="gallery.html" class="nav-link">Media & Gallery</a>
-                </div>
-                <!-- <div class="nav-item">
-                    <a href="donation.html" class="nav-link">Donation</a>
-                </div> -->
-                <div class="nav-item">
-                    <a href="events.html" class="nav-link">Events</a>
-                </div>
-                <div class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-            </nav>
-
-            <!-- CTA Donation Button -->
-            <div class="header-actions">
-                <a href="donation.html" class="btn-donate">Donate Now</a>
+        <!-- Bottom Row: Thin Menu Bar -->
+        <div class="header-bottom-row">
+            <div class="header-container">
+                <!-- Navigation Links -->
+                <nav id="main-nav-menu" class="nav-menu">
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="team.html" class="nav-link">Management / Team</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="programs.html" class="nav-link">Programs & Activities</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="academy.html" class="nav-link">Handball Academy</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="csr.html" class="nav-link">CSR & Partnership</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="gallery.html" class="nav-link">Media & Gallery</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <!-- Donate Now mobile link -->
+                    <div class="nav-item mobile-only">
+                        <a href="donation.html" class="nav-link mobile-donate-link">Donate Now</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -750,8 +759,7 @@
                         <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
                             style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
                         <div class="brand-text">
-                            <span class="brand-name">SNP <span>Handball</span></span>
-                            <span class="brand-tagline">Sports Trust & NGO</span>
+                            <span class="brand-name">S.N. Pandey Khel Sansthan <span>Trust</span></span>
                         </div>
                     </a>
                 </div>
@@ -804,6 +812,15 @@
                     <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <!-- <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
                     <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!-- Newsletter Subscription inside Footer -->
+                <div class="footer-newsletter">
+                    <h5>Subscribe to Newsletter</h5>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to S.N. Pandey Khel Sansthan Trust newsletter!'); this.reset();">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>

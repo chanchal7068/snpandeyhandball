@@ -75,66 +75,73 @@
         </div>
     </div>
 
-    <!-- Main Navigation Header (Sticky Header) -->
     <header id="main-header">
-        <div class="header-container">
-            <!-- Brand Logo -->
-            <div class="logo-container">
-                <a href="index.html">
-                    <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
-                        style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
-                    <!-- <div class="brand-text">
-                        <span class="brand-name">SNP <span>Handball</span></span>
-                        <span class="brand-tagline">Sports Trust & NGO</span>
-                    </div> -->
-                </a>
+        <!-- Top Row: Logo, Brand Text & Donate CTA -->
+        <div class="header-top-row">
+            <div class="header-container">
+                <!-- Brand Logo & Name -->
+                <div class="logo-container">
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="SNP Sports Trust Logo"
+                            style="width: 55px; height: 55px; border-radius: 50%; object-fit: cover;">
+                        <div class="brand-text">
+                            <span class="brand-name">S.N. Pandey</span>
+                            <span class="brand-tagline">Khel Sansthan Trust</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Hamburger toggle for mobile menu -->
+                <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Desktop CTA Button -->
+                <div class="header-actions desktop-only">
+                    <a href="donation.html" class="btn-donate">Donate Now</a>
+                </div>
             </div>
+        </div>
 
-            <!-- Hamburger toggle for mobile menu -->
-            <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <!-- Navigation Links (Flat, No submenus) -->
-            <nav id="main-nav-menu" class="nav-menu">
-                <div class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </div>
-                <div class="nav-item">
-                    <a href="about.html" class="nav-link">About Us</a>
-                </div>
-                <div class="nav-item">
-                    <a href="team.html" class="nav-link">Management / Team</a>
-                </div>
-                <div class="nav-item">
-                    <a href="programs.html" class="nav-link">Programs & Activities</a>
-                </div>
-                <div class="nav-item">
-                    <a href="academy.html" class="nav-link" style="color: var(--color-orange-gold);">Handball
-                        Academy</a>
-                </div>
-                <div class="nav-item">
-                    <a href="csr.html" class="nav-link">CSR & Partnership</a>
-                </div>
-                <div class="nav-item">
-                    <a href="gallery.html" class="nav-link">Media & Gallery</a>
-                </div>
-                <!-- <div class="nav-item">
-                    <a href="donation.html" class="nav-link">Donation</a>
-                </div> -->
-                <div class="nav-item">
-                    <a href="events.html" class="nav-link">Events</a>
-                </div>
-                <div class="nav-item">
-                    <a href="contact.html" class="nav-link">Contact</a>
-                </div>
-            </nav>
-
-            <!-- CTA Donation Button -->
-            <div class="header-actions">
-                <a href="donation.html" class="btn-donate">Donate Now</a>
+        <!-- Bottom Row: Thin Menu Bar -->
+        <div class="header-bottom-row">
+            <div class="header-container">
+                <!-- Navigation Links -->
+                <nav id="main-nav-menu" class="nav-menu">
+                    <div class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="team.html" class="nav-link">Management / Team</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="programs.html" class="nav-link">Programs & Activities</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="academy.html" class="nav-link" style="color: var(--color-orange-gold);">Handball Academy</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="csr.html" class="nav-link">CSR & Partnership</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="gallery.html" class="nav-link">Media & Gallery</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="events.html" class="nav-link">Events</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+                    <!-- Donate Now mobile link -->
+                    <div class="nav-item mobile-only">
+                        <a href="donation.html" class="nav-link mobile-donate-link">Donate Now</a>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
@@ -191,7 +198,7 @@
                 </div>
                 <div class="overview-visuals">
                     <div class="image-stack">
-                        <img src="assets/images/academy_facilities.png" alt="SNP Academy Facilities"
+                        <img src="assets/images/academy/academy_facilities.png" alt="SNP Academy Facilities"
                             class="main-stack-img">
                         <div class="experience-years-badge">
                             <span class="num">15+</span>
@@ -306,50 +313,6 @@
                         <h3>Clinical Care Cabin</h3>
                         <p>Provides active first-aid supplies, muscle recovery sprays, injury ice baths, and monthly
                             physical screenings.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==========================================
-             SECTION: ELITE COACHES
-             ========================================== -->
-        <section class="coaches-section section-padding bg-light">
-            <div class="container">
-                <div class="section-header text-center">
-                    <span class="section-tagline">Elite Training Crew</span>
-                    <h2>Academy Coaches</h2>
-                    <p class="section-subtitle-text">Experienced coaches guiding our youth athletes with state-level
-                        tactics and scientific conditioning methods.</p>
-                </div>
-
-                <div class="coaches-grid">
-                    <!-- Head Coach -->
-                    <div class="coach-card">
-                        <div class="coach-img-wrapper">
-                            <img src="assets/images/team_head_coach.png" alt="Coach Vinod Kumar" class="coach-img">
-                            <span class="coach-tag">Head Coach</span>
-                        </div>
-                        <div class="coach-content">
-                            <h3>Coach Vinod Kumar</h3>
-                            <span class="coach-exp">14+ Years in Elite Handball Coaching</span>
-                            <p>Vinod designs strategic defense blocks, shooting drills, and tactical positions for
-                                junior selection trials.</p>
-                        </div>
-                    </div>
-
-                    <!-- Trainer -->
-                    <div class="coach-card">
-                        <div class="coach-img-wrapper">
-                            <img src="assets/images/team_senior_coach.png" alt="Coach Priya Sharma" class="coach-img">
-                            <span class="coach-tag">Senior Trainer</span>
-                        </div>
-                        <div class="coach-content">
-                            <h3>Coach Priya Sharma</h3>
-                            <span class="coach-exp">9+ Years in Physical Fitness & Conditioning</span>
-                            <p>Priya leads the early morning stamina circuits, speed endurance running, and girls
-                                selection clinics.</p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -596,6 +559,15 @@
                     <a href="#" class="footer-social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <!-- <a href="#" class="footer-social-btn" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a> -->
                     <a href="#" class="footer-social-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+
+                <!-- Newsletter Subscription inside Footer -->
+                <div class="footer-newsletter">
+                    <h5>Subscribe to Newsletter</h5>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to S.N. Pandey Khel Sansthan Trust newsletter!'); this.reset();">
+                        <input type="email" placeholder="Enter your email" required />
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>

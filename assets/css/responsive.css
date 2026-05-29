@@ -52,6 +52,27 @@
         gap: var(--spacing-3);
     }
 
+    .header-bottom-row {
+        display: none !important;
+    }
+
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+
+    .mobile-donate-link {
+        color: var(--color-orange-gold) !important;
+        font-weight: 800 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: var(--spacing-4);
+        padding-top: var(--spacing-4) !important;
+        text-align: center;
+    }
+
     /* Enable Hamburger Toggle */
     .mobile-toggle {
         display: block;
